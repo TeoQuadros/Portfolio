@@ -1,0 +1,120 @@
+
+
+body {
+    margin: 0;
+    background-color: #1c1a1d;
+    color: hsl(0, 0%, 10%);
+    line-height: 1.5;
+       display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   font-family: 'Atkinson Hyperlegible Next';
+}
+
+
+
+h1 {
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    font-weight: bold;
+font-size: 10em;
+line-height: 1em;
+}
+
+h4 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size:1.5em;
+  margin-block-end: 0.5em
+}
+
+p {
+    color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size:1em;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: auto;
+  padding: 20px;
+  gap: 0px;
+  background-color: rgb(28, 26, 29);
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+display: flex;
+  justify-content: space-between;
+
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+ul li a:hover {
+  color: #ff4fbb;
+  transition: 0.5s;
+}
+
+section {
+  padding: 2em;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  text-decoration: none;
+  padding: 10px;
+  min-width: 7em;
+  font-weight: 700 ;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow:0 4px 8px 4px rgb(255, 114, 220)
+}
+
+.service-description {
+  padding-bottom: 2em;
+}
+
+img {
+  width: 10em
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  
+}
+  
