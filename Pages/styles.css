@@ -1,4 +1,7 @@
 
+* {
+  box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -22,11 +25,27 @@ font-size: 10em;
 line-height: 1em;
 }
 
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size:5em;
+  margin-block-end: 0.5em
+}
+
 h4 {
   color: hsl(0, 0%, 100%);
   font-weight: 500;
   font-size:1.5em;
-  margin-block-end: 0.5em
+
+}
+
+.tight-vertical-spacing {
+  margin: 0.5em;
+}
+
+.work-menu {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 p {
@@ -37,6 +56,8 @@ p {
 
 .hero-text {
   max-width: 50%;
+  margin-top: 5em;
+  margin-bottom: 8em;
 }
 
 nav {
@@ -110,6 +131,41 @@ button:hover {
 img {
   width: 10em
 }
+
+form {
+  color: white;
+}
+
+input [type=text] {
+  background-color: #1c1a1d;
+  border: solid white 0.1px;
+  min-height: 2em;
+  margin-bottom: 1em;
+  color: white;
+}
+
+input [type=text]:focus {
+  background-color: #bb33ff;
+
+}
+
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #1c1a1d;
+  border: solid white 0.1px;
+  min-height: 2em;
+  margin-bottom: 1em;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
 
 footer {
   color: white;
