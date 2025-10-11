@@ -194,14 +194,35 @@ div.gallery-item div.desc {
   text-align: center;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+img.large-image {
+  width: 100%;
+  padding-right: 5%;
+
+}
+
+
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color:rgb(28, 26, 29);
+  
 }
 
 a:hover {
   text-decoration: underline;
   text-decoration-color:rgb(255, 114, 220);
   transition: 1s;
+}
+
+a:focus {
+ color: rgb(255, 114, 220)    ;
 }
 
 @media only screen and (max-width: 768px) {
@@ -214,6 +235,13 @@ a:hover {
   div.gallery-item {
     width: calc(100% - 20px);
   }
+}
+
+img.full-image {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
 }
 
 
