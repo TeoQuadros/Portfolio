@@ -26,10 +26,13 @@ line-height: 1em;
 }
 
 h2 {
-  color: hsl(0, 0%, 100%);
+  color: white;
+  accent-color: white;
   font-weight: 500;
   font-size:5em;
-  margin-block-end: 0.5em
+  text-decoration: none;
+  margin-block-end: 0.5em;
+
 }
 
 h4 {
@@ -191,6 +194,16 @@ div.gallery-item div.desc {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color:rgb(255, 114, 220);
+  transition: 1s;
+}
+
 @media only screen and (max-width: 768px) {
   div.gallery-item {
     width: calc(50% - 20px);
@@ -202,6 +215,9 @@ div.gallery-item div.desc {
     width: calc(100% - 20px);
   }
 }
+
+
+
 
 
 footer {
