@@ -39,6 +39,7 @@ h4 {
   color: hsl(0, 0%, 100%);
   font-weight: 500;
   font-size:1.5em;
+  margin-bottom: 0.5em;
 
 }
 
@@ -87,6 +88,7 @@ ul.brief {
   display: inline;
   
 }
+
 
 ul li {
   margin-left: 2em;
