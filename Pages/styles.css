@@ -241,7 +241,8 @@ img.large-image {
   border-style: solid;
   border-color: white;
   border-radius: 1em;
-  padding:2em
+  padding:2em;
+  margin-bottom: 7em
 }
 
 a {
