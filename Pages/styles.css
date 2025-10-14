@@ -40,7 +40,14 @@ h4 {
   font-weight: 500;
   font-size:1.5em;
   margin-bottom: 0.5em;
+}
 
+h4.cardheader {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size:1.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0px
 }
 
 .tight-vertical-spacing {
@@ -159,6 +166,12 @@ input [type=text]:focus {
 
 }
 
+.desc {
+  color: white;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
 
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -220,6 +233,16 @@ img.large-image {
   max-width: 75%;
 }
 
+#two-column {
+  max-width: 50%;
+}
+
+.card {
+  border-style: solid;
+  border-color: white;
+  border-radius: 1em;
+  padding:2em
+}
 
 a {
   text-decoration: underline;
