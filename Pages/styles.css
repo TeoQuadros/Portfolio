@@ -246,6 +246,11 @@ img.large-image {
   margin-bottom: 2em;
 }
 
+#component-style {
+  margin-right: 1em;
+  max-width: 25%;
+}
+
 #four-column {
   margin-top: 2em;
   max-width: 75%;
