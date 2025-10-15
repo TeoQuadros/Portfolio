@@ -71,6 +71,12 @@ p {
   margin-bottom: 8em;
 }
 
+blockquote {
+  color: white;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
 nav {
   position: sticky;
   top: 0px;
@@ -222,10 +228,17 @@ div.gallery-item div.desc {
   flex: 50%;
 }
 
+
 img.large-image {
   width: 100%;
   padding-right: 5%;
 
+}
+
+#swatch {
+  
+  max-width: 10%;
+  margin-right: 2em;
 }
 
 #four-column {
