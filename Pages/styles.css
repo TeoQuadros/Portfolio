@@ -222,6 +222,7 @@ div.gallery-item div.desc {
 
 .row {
   display: flex;
+  align-items: center;
 }
 
 .column {
@@ -237,8 +238,12 @@ img.large-image {
 
 #swatch {
   
-  max-width: 10%;
+  max-width: 100px;
   margin-right: 2em;
+}
+
+#swatch-row {
+  margin-bottom: 2em;
 }
 
 #four-column {
