@@ -1,51 +1,62 @@
-
 * {
   box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: #1c1a1d;
-    color: hsl(0, 0%, 10%);
-    line-height: 1.5;
-       display: flex;
-   min-height: 100vh;
-   flex-direction: column;
-   font-family: 'Atkinson Hyperlegible Next';
+  margin: 0;
+  background-color: #1c1a1d;
+  color: hsl(0, 0%, 10%);
+  line-height: 1.5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Atkinson Hyperlegible Next';
 }
 
-
+section {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0em;
+}
 
 h1 {
-    margin: 0;
-    color: hsl(0, 0%, 100%);
-    line-height: 1.5;
-    font-weight: bold;
-font-size: 10em;
-line-height: 1em;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 10em;
+  line-height: 1em;
 }
 
 h2 {
   color: white;
   accent-color: white;
   font-weight: 500;
-  font-size:5em;
+  font-size: 5em;
   text-decoration: none;
   margin-block-end: 0.5em;
 
 }
 
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  
+}
+
 h4 {
   color: hsl(0, 0%, 100%);
   font-weight: 500;
-  font-size:1.5em;
+  font-size: 1.5em;
   margin-bottom: 0.5em;
 }
 
 h4.cardheader {
   color: hsl(0, 0%, 100%);
   font-weight: 500;
-  font-size:1.5em;
+  font-size: 1.5em;
   margin-bottom: 0.5em;
   margin-top: 0px
 }
@@ -60,15 +71,21 @@ h4.cardheader {
 }
 
 p {
-    color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-weight: 300;
-  font-size:1em;
+  font-size: 1em;
 }
 
 .hero-text {
-  max-width: 50%;
-  margin-top: 5em;
-  margin-bottom: 8em;
+  margin-bottom: 10em;
+  margin-top: 10em;
+  padding-right: 20%;
+  flex: 75%;
+}
+
+#hero-column {
+align-items: flex-start;
+max-width: 35%;
 }
 
 blockquote {
@@ -91,7 +108,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-display: flex;
+  display: flex;
   justify-content: space-between;
 
 }
@@ -99,7 +116,7 @@ display: flex;
 ul.brief {
   color: white;
   display: inline;
-  
+
 }
 
 
@@ -122,9 +139,7 @@ ul li a:hover {
   transition: 0.5s;
 }
 
-section {
-  padding: 2em;
-}
+
 
 button {
   color: white;
@@ -134,8 +149,24 @@ button {
   text-decoration: none;
   padding: 10px;
   min-width: 7em;
-  font-weight: 700 ;
+  font-weight: 700;
   border-radius: 5px;
+}
+
+.large-button {
+  color: white;
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 7em;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: large;
 }
 
 button:hover {
@@ -144,7 +175,7 @@ button:hover {
   border-color: white;
   transition: 0.5s;
   border-radius: 5px;
-  box-shadow:0 4px 8px 4px rgb(255, 114, 220)
+  box-shadow: 0 4px 8px 4px rgb(255, 114, 220)
 }
 
 .service-description {
@@ -180,7 +211,9 @@ input [type=text]:focus {
 
 
 
-input[type=button], input[type=submit], input[type=reset] {
+input[type=button],
+input[type=submit],
+input[type=reset] {
   background-color: #1c1a1d;
   border: solid white 0.1px;
   min-height: 2em;
@@ -191,6 +224,12 @@ input[type=button], input[type=submit], input[type=reset] {
   min-width: 5em;
   border-radius: 5px;
   cursor: pointer;
+}
+
+div.text-block {
+  padding-right: 20%;
+  margin-top: 6em;
+  margin-bottom: 7em;
 }
 
 div.gallery {
@@ -223,10 +262,22 @@ div.gallery-item div.desc {
 .row {
   display: flex;
   align-items: center;
+  
 }
 
 .column {
   flex: 50%;
+
+}
+
+#about-header {
+  display: flex;
+  justify-content: center;
+}
+
+#hero-row {
+  display: flex;
+  align-items: flex-start;
 }
 
 
@@ -236,8 +287,11 @@ img.large-image {
 
 }
 
+img.hero-image {
+  width: 100%;
+}
+
 #swatch {
-  
   max-width: 100px;
   margin-right: 2em;
 }
@@ -264,24 +318,24 @@ img.large-image {
   border-style: solid;
   border-color: white;
   border-radius: 1em;
-  padding:2em;
+  padding: 2em;
   margin-bottom: 7em
 }
 
 a {
   text-decoration: underline;
-  text-decoration-color:rgb(28, 26, 29);
-  
+  text-decoration-color: rgb(28, 26, 29);
+
 }
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color:rgb(255, 114, 220);
+  text-decoration-color: rgb(255, 114, 220);
   transition: 1s;
 }
 
 a:focus {
- color: rgb(255, 114, 220)    ;
+  color: rgb(255, 114, 220);
 }
 
 @media only screen and (max-width: 768px) {
@@ -311,6 +365,5 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  
+
 }
-  
