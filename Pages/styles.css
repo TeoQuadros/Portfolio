@@ -32,22 +32,15 @@ h2 {
   accent-color: white;
   font-weight: 500;
   font-size: 5em;
-  text-decoration: none;
-
-
+  margin-bottom: 0;
+  margin-top: 0,5;
 }
 
-h3 {
-  color: white;
-  font-weight: 300;
-  font-size: 1.5em;
-}
 
 h4 {
   color: white;
   font-weight: 500;
   font-size: 1.5em;
-
 }
 
 
@@ -58,27 +51,23 @@ p {
   font-size: 1em;
 }
 
+p.large-text {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
 b {
   font-weight: 600;
 }
 
 a {
   color: white;
-  
 }
 
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10em;
-  margin-top: 10em;
-  align-items: flex-start
-}
 
-#hero-column {
-  align-items: flex-start;
-  max-width: 35%;
-}
+
+
 
 blockquote {
   color: white;
@@ -141,7 +130,7 @@ ul li a:hover {
   min-width: 7em;
   font-weight: 500;
   border-radius: 5px;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .secondary-button {
@@ -211,11 +200,7 @@ input[type=reset] {
   cursor: pointer;
 }
 
-div.text-block {
-  padding-right: 20%;
-  margin-top: 6em;
-  margin-bottom: 7em;
-}
+
 
 div.gallery {
   display: flex;
@@ -226,12 +211,12 @@ div.gallery {
 
 div.gallery-item {
   margin: 5px;
-  border: 1px solid #ccc;
+  
   width: calc(25% - 20px);
 }
 
 div.gallery-item:hover {
-  border: 1px solid #777;
+  border: 1px solid white;
 }
 
 div.gallery-item img {
@@ -246,37 +231,20 @@ div.gallery-item div.desc {
 
 .row {
   display: flex;
-  align-items: center;
-  
-
+  align-items: flex-start
 }
 
 .column {
   flex: 50%;
-
+  padding-right: 10px
 }
 
-#about-header {
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
-}
-
-#hero-row {
-  display: flex;
-  align-items: flex-start;
-}
-
-
-img.large-image {
+.small-image-text-block {
   width: 100%;
   padding-right: 5%;
 
 }
 
-img.hero-image {
-  width: 100%;
-}
 
 #swatch {
   max-width: 100px;
