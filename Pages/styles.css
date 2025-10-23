@@ -11,10 +11,14 @@ body {
   min-height: 100vh;
   flex-direction: column;
   font-family: 'Atkinson Hyperlegible Next';
-  padding-left: 5%;
-  padding-right: 5%;
+
 }
 
+section {
+ padding-left: 5%;
+  padding-right: 5%;
+}
+ 
 
 h1 {
   
@@ -55,6 +59,7 @@ p.large-text {
   color: white;
   font-weight: 300;
   font-size: 1.5em;
+  margin-top: 0
 }
 
 b {
@@ -81,21 +86,25 @@ nav {
   z-index: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
   gap: 0px;
   background-color: rgb(28, 26, 29);
   text-align: center;
 }
 
-ul {
+#navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
   display: flex;
-  justify-content:space-between
-
+  justify-content:space-between;
+  width: fu;;;
 }
 
-
+ul li {
+list-style: circle;
+}
 
 ul li a {
   display: block;
@@ -231,17 +240,43 @@ div.gallery-item div.desc {
 
 .row {
   display: flex;
-  align-items: flex-start
+  align-items: center
 }
 
-.column {
-  flex: 50%;
-  padding-right: 10px
+.column-small {
+  flex: 35%;
+  padding-right: 5%
+}
+
+.column-large {
+  flex: 75%;
+  padding-right: 5%
+}
+
+@media only screen and (max-width: 500px) {
+.row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction:column;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction:column;
+}
 }
 
 .small-image-text-block {
   width: 100%;
   padding-right: 5%;
+
+}
+
+img {
+  width: 100%;
 
 }
 
@@ -260,9 +295,8 @@ div.gallery-item div.desc {
   max-width: 25%;
 }
 
-#four-column {
-  margin-top: 2em;
-  max-width: 75%;
+#img-row {
+margin-right: 1%
 }
 
 #two-column {
@@ -275,6 +309,12 @@ div.gallery-item div.desc {
   border-radius: 1em;
   padding: 2em;
   margin-bottom: 7em
+}
+
+.brief {
+  list-style-type: circle;
+  color: white;
+
 }
 
 a {
