@@ -2,14 +2,18 @@
   box-sizing: border-box;
 }
 
+html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   margin: 0;
   background-color: #1c1a1d;
   color: hsl(0, 0%, 10%);
-  line-height: 1.5;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
   font-family: 'Atkinson Hyperlegible Next';
 
 }
@@ -17,7 +21,13 @@ body {
 section {
  padding-left: 5%;
   padding-right: 5%;
-  margin-top: 10em
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  flex-direction:column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
  
 
@@ -40,11 +50,13 @@ h2 {
   font-size: 5em;
   margin-bottom: 0;
   margin-top: 0;
-  line-height: normal;
+  
 }
 
 #h2-stacked {
-  margin-top: 0 !important; 
+  margin-top: 0 !important;
+ 
+  
 }
 
 h4 {
@@ -65,7 +77,9 @@ p.large-text {
   color: white;
   font-weight: 300;
   font-size: 1.5em;
-  margin-top: 0
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
 }
 
 b {
@@ -84,7 +98,7 @@ blockquote {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: auto;
   padding-top: 20px;
@@ -94,19 +108,21 @@ nav {
   gap: 0px;
   background-color: rgb(28, 26, 29);
   text-align: center;
+  width:100%;
 }
 
-#navbar {
+.navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
   display: flex;
   justify-content:space-between;
-  width: fu;;;
+ 
 }
 
 ul li {
 list-style: circle;
+list-style-type: circle;
 }
 
 ul li a {
@@ -125,7 +141,9 @@ ul li a:hover {
 }
 
 
-
+.hero-section {
+  padding-top:8%;
+}
 
 
 .primary-button {
@@ -143,6 +161,7 @@ ul li a:hover {
   font-weight: 500;
   border-radius: 5px;
   font-size: 1em;
+  margin-top:2em
 }
 
 .secondary-button {
@@ -243,8 +262,9 @@ div.gallery-item div.desc {
 
 .row {
   display: flex;
-  align-items: center
+  flex-direction: row;
 }
+
 
 .column-small {
   flex: 35%;
@@ -252,8 +272,15 @@ div.gallery-item div.desc {
 }
 
 .column-large {
-  flex: 75%;
-  padding-right: 5%
+  max-width:75%;
+  padding-right: 5%;
+  min-width:50%;
+}
+
+.container {
+  display: flex;
+  min-width: 100%;
+  
 }
 
 @media only screen and (max-width: 500px) {
@@ -317,6 +344,7 @@ margin-right: 1%
 .brief {
   list-style-type: circle;
   color: white;
+  padding-left: 1em;
 
 }
 
