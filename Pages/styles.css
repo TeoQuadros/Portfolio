@@ -19,8 +19,8 @@ body {
 }
 
 section {
- padding-left: 5%;
-  padding-right: 5%;
+
+  padding-top: 89px;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex-direction:column;
@@ -30,7 +30,16 @@ section {
   align-items: flex-start;
 }
  
+.spacer {
+  padding-left:5%;
+  padding-right:10%;
+  width: 100%
+}
 
+.centered {
+  display: flex;
+  align-items: center;
+}
 
 h1 {
   
@@ -48,7 +57,7 @@ h2 {
   accent-color: white;
   font-weight: 500;
   font-size: 5em;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   margin-top: 0;
   
 }
@@ -145,6 +154,23 @@ ul li a:hover {
   padding-top:8%;
 }
 
+.pink-mode {
+color: white;
+  background-color: #ff4fbb;
+  border-style: solid;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 7em;
+  border-radius: 5px;
+  font-family: 'Atkinson Hyperlegible Next';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1em;
+  
+}
 
 .primary-button {
 
@@ -161,7 +187,8 @@ ul li a:hover {
   font-weight: 500;
   border-radius: 5px;
   font-size: 1em;
-  margin-top:2em
+  margin-top:2em;
+  font-family: 'Atkinson Hyperlegible Next';
 }
 
 .secondary-button {
@@ -187,9 +214,7 @@ button:hover {
   padding-bottom: 2em;
 }
 
-img {
-  width: 10em
-}
+
 
 form {
   color: white;
@@ -263,12 +288,14 @@ div.gallery-item div.desc {
 .row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 
 .column-small {
   flex: 35%;
   padding-right: 5%
+  ma
 }
 
 .column-large {
@@ -305,10 +332,7 @@ div.gallery-item div.desc {
 
 }
 
-img {
-  width: 100%;
 
-}
 
 
 #swatch {
@@ -386,6 +410,21 @@ img.full-image {
 
 
 
+
+.fullscreen-image {
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+  
+.imagetest1 {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
 footer {
   color: white;
