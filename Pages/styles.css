@@ -32,7 +32,7 @@ section {
  
 .spacer {
   padding-left:5%;
-  padding-right:10%;
+  padding-right:5%;
   width: 100%
 }
 
@@ -45,7 +45,7 @@ h1 {
   
   color: hsl(0, 0%, 100%);
   font-weight: bold;
-  font-size: 10rem;
+  font-size:10em;
   line-height: 1em;
   margin: 0;
 }
@@ -57,16 +57,11 @@ h2 {
   accent-color: white;
   font-weight: 500;
   font-size: 5em;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   margin-top: 0;
   
 }
 
-#h2-stacked {
-  margin-top: 0 !important;
- 
-  
-}
 
 h4 {
   color: white;
@@ -86,9 +81,6 @@ p.large-text {
   color: white;
   font-weight: 300;
   font-size: 1.5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  
 }
 
 b {
@@ -132,6 +124,7 @@ nav {
 ul li {
 list-style: circle;
 list-style-type: circle;
+margin-bottom: 0%;
 }
 
 ul li a {
@@ -147,22 +140,19 @@ ul li a {
 ul li a:hover {
   color: #ff4fbb;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 
-.hero-section {
-  padding-top:8%;
-}
+
 
 .pink-mode {
-color: white;
-  background-color: #ff4fbb;
-  border-style: solid;
+color: #ff4fbb;
+  background-color: #1c1a1d;
+  border-style: none;
   text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   min-width: 7em;
   border-radius: 5px;
   font-family: 'Atkinson Hyperlegible Next';
@@ -205,6 +195,14 @@ color: white;
 button:hover {
   color: black;
   background-color: white;
+  transition: 1s;
+  border-radius: 5px;
+  
+}
+
+button.pink-mode:hover {
+  color: white;
+  background-color: #1c1a1d;
   transition: 1s;
   border-radius: 5px;
   
@@ -289,13 +287,14 @@ div.gallery-item div.desc {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 2em;
 }
 
 
 .column-small {
   flex: 35%;
   padding-right: 5%
-  ma
+  
 }
 
 .column-large {
@@ -310,12 +309,8 @@ div.gallery-item div.desc {
   
 }
 
-@media only screen and (max-width: 500px) {
-.row {
-  display: flex;
-  align-items: flex-start;
-  flex-direction:column;
-}
+.column-full {
+  width:100%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -324,6 +319,49 @@ div.gallery-item div.desc {
   align-items: flex-start;
   flex-direction:column;
 }
+
+}
+
+@media only screen and (max-height: 800px) {
+h1 {
+  
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size:7em;
+  line-height: 1em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+p.large-text {
+  color: white;
+  font-weight: 300;
+  font-size: 1.25em;
+}
+
+nav {
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+ul li a {
+  font-size: 1em;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+
 }
 
 .small-image-text-block {
@@ -403,11 +441,16 @@ a:focus {
 img.full-image {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 
 }
 
+img.large-image {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 
+}
 
 
 
@@ -430,5 +473,8 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  width: 100%;
+  bottom: 0px;
+
 
 }
