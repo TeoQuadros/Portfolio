@@ -20,7 +20,6 @@ body {
 
 section {
 
-  padding-top: 89px;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex-direction:column;
@@ -292,7 +291,7 @@ div.gallery-item div.desc {
 
 
 .column-small {
-  flex: 35%;
+  max-width: 35%;
   padding-right: 5%
   
 }
