@@ -66,6 +66,7 @@ h4 {
   color: white;
   font-weight: 500;
   font-size: 1.5em;
+  margin: 0;
 }
 
 
@@ -398,8 +399,7 @@ margin-right: 1%
   border-style: solid;
   border-color: white;
   border-radius: 1em;
-  padding: 2em;
-  margin-bottom: 7em
+  padding: 1em;
 }
 
 .brief {
