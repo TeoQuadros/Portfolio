@@ -19,7 +19,7 @@ body {
 }
 
 section {
-
+position: relative;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex-direction:column;
@@ -27,6 +27,7 @@ section {
   align-items: center;
   justify-content: center;
   align-items: flex-start;
+  height: 100%;
 }
  
 .spacer {
@@ -101,7 +102,7 @@ blockquote {
 nav {
   position: fixed;
   top: 0px;
-  z-index: auto;
+  z-index: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 5%;
@@ -120,6 +121,33 @@ nav {
   justify-content:space-between;
  
 }
+
+footer {
+ position: absolute;
+  bottom: 0px;
+  padding: 0%;
+  gap: 0px;
+  background-color: rgb(28, 26, 29);
+  text-align: center;
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-color: white;
+  border-top: solid white 0.2px;
+
+}
+
+.extra-small {
+font-size: small;
+}
+
+.footer-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
 
 ul li {
 list-style: circle;
@@ -468,12 +496,3 @@ img.large-image {
   justify-content: center;
 }
 
-footer {
-  color: white;
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  bottom: 0px;
-
-
-}
