@@ -99,6 +99,10 @@ blockquote {
   font-size: 0.9em;
 }
 
+
+sup {
+  font-size: 0.5em;
+}
 nav {
   position: fixed;
   top: 0px;
@@ -108,7 +112,7 @@ nav {
   padding-left: 5%;
   padding-right: 5%;
   gap: 0px;
-  background-color: rgb(28, 26, 29);
+  background-color: #1c1a1d;
   text-align: center;
   width:100%;
 }
@@ -127,7 +131,7 @@ footer {
   bottom: 0px;
   padding: 0%;
   gap: 0px;
-  background-color: rgb(28, 26, 29);
+  background-color: #1c1a1d;
   text-align: center;
   width:90%;
   display: flex;
@@ -396,8 +400,69 @@ ul li a {
   width: 100%;
   padding-right: 5%;
 
+}   
+
+
+.chevron::after {
+  content:'\f078';  
+  font-family: 'Font Awesome 5 Free';
+  font-size: 2rem;
+  font-weight: 900
 }
 
+
+.accordion {
+  display: flex;
+  font-family: 'Atkinson Hyperlegible Next';
+  font-size: 1em;
+  background-color: #1c1a1d;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 1s;
+  align-items: center;
+  margin-left:0
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #1c1a1d;
+  border-bottom: solid white;
+  border-radius: 0px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  
+  background-color: #1c1a1d;
+   max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+
+.accordion:after {
+  content: '\f078'; /* Unicode character for "plus" sign (+) */
+  font-size: 1.5em;
+  color: white;
+  float: right;
+   font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-left:1em
+}
+
+.active:after {
+ content: '\f077'; /* Unicode character for "plus" sign (+) */
+  font-size: 1.5em;
+  color: white;
+  float: right;
+   font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-left:1em /* Unicode character for "minus" sign (-) */
+}
 
 
 
