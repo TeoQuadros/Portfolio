@@ -240,6 +240,10 @@ button.pink-mode:hover {
   
 }
 
+.icon-text {
+  padding-left:5px;
+}
+
 .service-description {
   padding-bottom: 2em;
 }
@@ -427,6 +431,22 @@ ul li a {
   margin-left:0
 }
 
+.accordion-small {
+    display: flex;
+  font-family: 'Atkinson Hyperlegible Next';
+  font-size: 1em;
+  background-color: #1c1a1d;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 1s;
+  align-items: center;
+  margin-left:0
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #1c1a1d;
@@ -463,6 +483,7 @@ ul li a {
   font-weight: 900;
   margin-left:1em /* Unicode character for "minus" sign (-) */
 }
+
 
 
 
