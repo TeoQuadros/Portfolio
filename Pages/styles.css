@@ -15,6 +15,7 @@ body {
   background-color: #1c1a1d;
   color: hsl(0, 0%, 10%);
   font-family: 'Atkinson Hyperlegible Next';
+  width: 100%
 
 }
 
@@ -28,6 +29,8 @@ position: relative;
   justify-content: center;
   align-items: flex-start;
   height: 100%;
+  width: 100%;
+  font-size: 12px;
 }
  
 .spacer {
@@ -45,7 +48,7 @@ h1 {
   
   color: hsl(0, 0%, 100%);
   font-weight: bold;
-  font-size:10em;
+  font-size:15em;
   line-height: 1em;
   margin: 0;
 }
@@ -99,12 +102,15 @@ blockquote {
   font-size: 0.9em;
 }
 
+.hero-text {
+  margin-bottom: 2em
+}
 
 sup {
   font-size: 0.5em;
 }
 nav {
-  position: fixed;
+  position: sticky;
   top: 0px;
   z-index: 1;
   padding-top: 20px;
@@ -123,7 +129,7 @@ nav {
   overflow: hidden;
   display: flex;
   justify-content:space-between;
- 
+ width:100%;
 }
 
 footer {
@@ -224,6 +230,67 @@ color: #ff4fbb;
   border-radius: 5px;
 }
 
+.mailto-wrapper {
+  position: relative;
+}
+
+.mailto-message {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  position: absolute;
+  display: none;
+  width: auto;
+  white-space: nowrap;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.mailto-message:after {
+  content: "";
+}
+
+.mailto-wrapper:hover .mailto-message {
+  display: block;
+}
+
+.copy-link::before {
+  content:'\f0c5';  
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1em;
+  font-weight: 900;
+  padding-right: 10px
+}
+
+#ScrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  font-family: 'Atkinson Hyperlegible Next';
+  border: none;
+  outline: solid;
+  outline-width: 2px;
+  background-color: #1c1a1d;
+  color: white;
+  cursor: pointer;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 8px;
+  border-radius: 4px;
+}
+
+#ScrollBtn:hover {
+  background-color: white;
+  color: #1c1a1d;
+  
+  transition: 0.5s;
+}
+
 button:hover {
   color: black;
   background-color: white;
@@ -242,6 +309,7 @@ button.pink-mode:hover {
 
 .icon-text {
   padding-left:5px;
+  color: white;
 }
 
 .service-description {
@@ -346,7 +414,14 @@ div.gallery-item div.desc {
 }
 
 .column-full {
-  width:100%;
+  height:100%;
+}
+
+.column {
+  height:90%;
+  
+  padding-right: 2%;
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -582,3 +657,87 @@ img.large-image {
   justify-content: center;
 }
 
+
+
+.carousel__content--wrapper {
+  display: none;
+  
+}
+.carousel:has(input#radio0:checked) .carousel__content--wrapper:nth-child(1) {
+  display: contents;
+}
+.carousel:has(input#radio1:checked) .carousel__content--wrapper:nth-child(2) {
+  display: contents;
+}
+.carousel:has(input#radio2:checked) .carousel__content--wrapper:nth-child(3) {
+  display: contents;
+}
+.carousel:has(input#radio3:checked) .carousel__content--wrapper:nth-child(4) {
+  display: contents;
+}
+.carousel:has(input#radio4:checked) .carousel__content--wrapper:nth-child(5) {
+  display: contents;
+}
+.carousel__content {
+  display: grid;
+  grid-template-areas: 'p img n';
+  grid-template-columns: auto 90vmin auto;
+  place-items: center;
+  height: 80vh;
+}
+.carousel__nav {
+  font-family: 'Atkinson Hyperlegible Next';
+  font-weight: bold;
+  padding: 15px;
+  line-height: 1;
+  background: #1c1a1d;
+  color: white;
+  border-radius: 0.2rem;
+  border: 1.5px solid;
+  user-select: none;
+  transition: all 40ms;
+}
+.carousel__nav:active {
+  background: white;
+   color: #1c1a1d;
+  transform: translate(0.2rem, 0.2rem);
+  transition: all 0.2s;
+}
+.carousel__nav--prev {
+  grid-area: p;
+}
+.carousel__nav--next {
+  grid-area: n;
+}
+.carousel--img {
+  grid-area: img;
+  aspect-ratio: 0.7;
+  overflow: hidden;
+  margin: 5px;
+}
+.carousel--img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.carousel__pagination {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+.carousel__pagination input {
+  appearance: none;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: #1c1a1d;
+  border: 2px solid white;
+  border-radius: 100%;
+  box-shadow: 0.1rem 0.1rem 0;
+}
+.carousel__pagination input:checked {
+  background: white;
+  border-color: white;
+}

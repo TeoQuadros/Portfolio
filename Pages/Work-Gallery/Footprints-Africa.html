@@ -23,7 +23,37 @@
             <li><button class="pink-mode">Pink Mode</button></li>
     </nav>
 
+<button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top"><div>^</div></button>
 
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollToTopBtn = document.getElementById('ScrollBtn');
+  const scrollThreshold = 200; // Show button after scrolling 200px
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+      scrollToTopBtn.style.display = "block";
+      scrollToTopBtn.style.opacity = "1"; // Make it appear
+    } else {
+      scrollToTopBtn.style.display = "none"; // Hide it completely
+      scrollToTopBtn.style.opacity = "0"; // Make it disappear
+    }
+  }
+
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // This creates the visual, smooth scroll
+    });
+  });
+});
+
+
+</script>
 
     <section>
         <div class="spacer">
@@ -50,15 +80,14 @@
 
                     </div>
                     <div class="column-large">
-                        <p class="large-text">I created this vibrant set of illustrations for Footprints Africa - a
+                        <p class="large-text">Footprints Africa is a
                             non-profit
                             organisation working to advance sustainable development of local African economies.
                         </p>
-                        <p class="large-text">The colour palette and visual style are inspired by this header image for
-                            the
-                            page, by MUTI design studio (left). The goal was to create some smaller images to replace
+                        <p class="large-text">I created this vibrant set of illustrations to replace
                             stock
-                            photos in the card elements, to give the page a more cohesive feel.
+                            photos in the card elements, to give the page a more cohesive feel. The colour palette and visual style are inspired by this header image for
+                            the page, by MUTI design studio (left). 
                         </p>
                     </div>                   
                 </div>
@@ -102,7 +131,7 @@
                     <div class="desc">Plastics</div>
                 </div>
                <div class="column-full" id="img-row">
-                    <img class="full-image" src="/Assets\Footprints-Africa\Regen. Agriculture.png">
+                    <img class="full-image" src="/Assets\Footprints-Africa\Regen-Agriculture.png">
                     <div class="desc">Regen. Agriculture</div>
                 </div>
                 <div class="column-full">
@@ -112,7 +141,6 @@
             </div>
              <p class="large-text">I took inspiration from the shape language of the original design, focusing
                 on capturing the flat, yet expressive illustrative style.</p>
-                <p class="large-text">Each image has a predominant colour from the palette</p>
         </div>
         
     </section>
@@ -121,23 +149,77 @@
 
     <section>
         <div class="spacer">
-            <div class="row">
-                <div class="column-large">
-                    <img class="full-image" src="/Assets\Footprints-Africa\ACEN-contextual.png">
-                    <div class="desc">Mockup from site screenshot</div>
+            
 
-                </div>
-                <div class="column-small">
-                    <p class="large-text">The site displaying this work is unavailable as Footprints Africa is no longer
+                <div class="row">
+
+                <div class="row">
+                    <div class="column">
+                        <img class="full-image" src="/Assets\Footprints-Africa\ACEN-contextual.png">
+                        <div class="desc">Designed by <a href="https://studiomuti.co.za/">MUTI</a></div>
+
+                    </div>
+                    <div class="column-small">
+                        <p class="large-text">The site displaying this work is unavailable as Footprints Africa is no longer
                         an active
-                        organisation - I made this mockup to display how they looked while Footprints Africa was live.
+                        organisation. This mockup displays how they looked while Footprints Africa was live.
                     </p>
+                        </p>
+                        
+                    </div>                   
                 </div>
-            </div>
+                
         </div>
     </section>
 
-
+<section>
+    <div class="spacer">
+        <div class="carousel">
+  <div class="carousel__content--wrapper">
+    <div class="carousel__content"> 
+      <label class="carousel__nav carousel__nav--prev" for="radio4"><</label>
+      <label class="carousel__nav carousel__nav--next" for="radio1">></label>
+      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Construction.png" alt="Image Description"/></figure>
+    </div>
+  </div>
+  <div class="carousel__content--wrapper">
+    <div class="carousel__content"> 
+      <label class="carousel__nav carousel__nav--prev" for="radio0"><</label>
+      <label class="carousel__nav carousel__nav--next" for="radio2">></label>
+      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\E-Waste.png" alt="Image Description"/></figure>
+    </div>
+  </div>
+  <div class="carousel__content--wrapper">
+    <div class="carousel__content"> 
+      <label class="carousel__nav carousel__nav--prev" for="radio1"><</label>
+      <label class="carousel__nav carousel__nav--next" for="radio3">></label>
+      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Plastics.png" alt="Image Description"/></figure>
+    </div>
+  </div>
+  <div class="carousel__content--wrapper">
+    <div class="carousel__content"> 
+      <label class="carousel__nav carousel__nav--prev" for="radio2"><</label>
+      <label class="carousel__nav carousel__nav--next" for="radio4">></label>
+      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Regen-Agriculture.png" alt="Image Description"/></figure>
+    </div>
+  </div>
+  <div class="carousel__content--wrapper">
+    <div class="carousel__content"> 
+      <label class="carousel__nav carousel__nav--prev" for="radio3"><</label>
+      <label class="carousel__nav carousel__nav--next" for="radio0">></label>
+      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Random.png" alt="Image Description"/></figure>
+    </div>
+  </div>
+  <div class="carousel__pagination">
+    <input type="radio" id="radio0" name="selectedImage" checked="checked"/>
+    <input type="radio" id="radio1" name="selectedImage"/>
+    <input type="radio" id="radio2" name="selectedImage"/>
+    <input type="radio" id="radio3" name="selectedImage"/>
+    <input type="radio" id="radio4" name="selectedImage"/>
+  </div>
+</div>
+    </div>
+</section>
 
 
 
