@@ -30,13 +30,17 @@ position: relative;
   align-items: flex-start;
   height: 100%;
   width: 100%;
-  font-size: 12px;
+  font-size: 16px;
 }
  
 .spacer {
   padding-left:5%;
   padding-right:5%;
   width: 100%
+}
+
+.vertical-spacer{
+margin-top: 5%
 }
 
 .centered {
@@ -48,7 +52,7 @@ h1 {
   
   color: hsl(0, 0%, 100%);
   font-weight: bold;
-  font-size:15em;
+  font-size:10em;
   line-height: 1em;
   margin: 0;
 }
@@ -59,7 +63,7 @@ h2 {
   color: white;
   accent-color: white;
   font-weight: 500;
-  font-size: 5em;
+  font-size: 4em;
   margin-bottom: 0em;
   margin-top: 0;
   
@@ -130,6 +134,7 @@ nav {
   display: flex;
   justify-content:space-between;
  width:100%;
+ 
 }
 
 footer {
@@ -162,14 +167,14 @@ font-size: small;
 ul li {
 list-style: circle;
 list-style-type: circle;
-margin-bottom: 0%;
+margin-bottom: 1em;
 }
 
 ul li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;

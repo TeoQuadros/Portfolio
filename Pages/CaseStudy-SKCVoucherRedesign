@@ -36,15 +36,21 @@
             <h2>
                 Timescale
             </h2>
-            <p>
-                I was asked to re-design the printable Voucher and Evoucher for SK Chase to modernise them.
-                The new designs should be aesthetically pleasing - suitable for customers to print at home and give as a
-                gift.
-                It must contain all the relevant information as in the current version.
-                <br>It's important to note that I started out with almost no graphic design expereince. I see this
-                project a bit
-                like as a barometer of my progress and confidence within Illustrator over 3 years.
+            <p>The project spanned 5 months, but about 1 work day or less per week, with some pauses between development
+                sprints.</p>
+            <div class="vertical-spacer">
+                <h2>
+                Team involved
+            </h2>
+            <p><b>Me (Teo)</b> - design, iteration and presentation of designs, communicating ideas to product manager and developer
             </p>
+            <p><b>Jan Harding</b> - Product manager at SK Chase - outlining requirements, offering knowledge & insight into the
+                system. Facilitating feedback on designs from team and client hotels. Liaising with client hotels.</p>
+            <p><b>Tom Van Enkevort</b> - Developer at HappyPorch - implementation of designs. Deep knowledge of CMS and
+                technical limitations, offering technical insight into designs and ensuring feasibility of
+                implementation.
+            </p>
+            </div>
         </div>
     </section>
 
@@ -56,33 +62,20 @@
 
             <div>
                 <ul class="brief">
-                    <li>I was asked to re-design the printable Voucher and Evoucher for SK Chase to modernise them.
+                    <li>I was asked to re-design the printable Voucher and Evoucher for SK Chase to modernise them. The new designs should be aesthetically pleasing -  suitable for customers to print at home and give as a gift. 
 
 
                     </li>
-                    <li>The new designs should be aesthetically pleasing - suitable for customers to print at home and
-                        give as a gift.</li>
+                    <li>The print version and E-voucher have different requirements and functionality, so they need separate design processes.</li>
 
                     <li>It must contain all the relevant information as in the current version.</li>
-                </ul>
+                <li>The vouchers are printed on A4 paper, and each design needs to be foldable into at least 2, if not three to easily fit into an envelope.</li>
+                <li>A stretch goal, I was asked to design something which offers more possibilities for client customisation.</li>
+            </ul>
             </div>
 
-            <div class="row" id="four-column">
-                <div class="column"><img class="large-image" src="/Assets\HP_Direction.png" alt="Direction Signpost"
-                        width="100%">
-                </div>
-                <div class="column"><img class="large-image" src="/Assets\HP_Impact-focused.png" alt="Impact Focused"
-                        width="100%"></div>
-                <div class="column"><img class="large-image" src="/Assets\HP_Purposeful-progress.png"
-                        alt="Purposeful Progress" width="100%"></div>
-                <div class="column"><img class="large-image" src="/Assets\HP_Smart-ideas.png" alt="Smart Ideas"
-                        width="100%">
-                </div>
-
-            </div>
-            <p>
-                Designed by (designer name)
-            </p>
+           
+           
         </div>
     </section>
 
@@ -91,17 +84,18 @@
             <h2>
                 Problems/Constraints
             </h2>
-            <p>
-                One of SKChase’s clients requested a large image format to feature an enticing photograph of the offer
-                purchased. I was asked to prioritise this request.
-                Resultingly, there was significantly less usable space for the voucher information.
-                A full reimagining of the way this info is presented was therefore needed.
-            </p>
-            <p>Some information is optional and clients have the possibility to hide certain information types depending
-                on their specific needs.
-                This meant the design had to accommodate variable informational fields and resize accordingly to avoid
-                blank white space, or to accommodate the maximum possible number of informational fields.
-            </p>
+            <div>
+                <ul class="brief">
+                    <li>One of SKChase’s clients requested a large image format to feature an enticing photograph of the offer purchased. I was asked to prioritise this request.
+Resultingly, there was significantly less usable space for the voucher information. 
+A full reimagining of the way this info is presented was therefore needed.
+
+                    </li>
+                    <li>Some information is optional to display and clients have the possibility to hide certain fields depending on their specific needs. </li>
+
+                    <li>This meant the design had to accommodate variable informational fields and resize accordingly to avoid blank white space, or to accommodate the maximum possible number of informational fields.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -113,30 +107,24 @@
 
             <h4>Research</h4>
             <p>I was provided with some samples of different vouchers that presented information in various ways.
-I researched ticket/voucher designs online. I looked at some competitors’ voucher designs, too.
-</p>
+                I researched ticket/voucher designs online. I looked at some competitors’ voucher designs, too.
+            </p>
 
             <h4>Concept Development</h4>
-            <p>Using some of the identified keywords/phrases/ideas, I search for pictures relating to these concepts
-                online,
-                to
-                get a better idea of shapes to incorporate and further generate ideas. I also research artists with
-                similar line
-                styles, to better inform my shape language later down the line. I looked at the HappyPorch website to
-                look at
-                the
-                kind of language used to communicate these ideas of technology for environmental good, and added some
-                additional
-                words/phrases to the word bank.
-            </p>
+            <p>SK Chase caters to many different hotels with diverse branding requirements.
+The information and branding displayed is pulled from various places within the CMS and automatically populates the print/e-voucher templates, so the design concept needs to accommodate variables such as the word count of personal message and voucher details.</p>
 
-            <h4>Sketching</h4>
-            <p>The first drawing I do is always with pen and paper. It allows me to freely sketch all ideas I have
-                without
-                over-perfecting or developing them. I draw all my initial concepts and then start to pare them down to
-                the
-                required number or the ones which fit the topic the best.
-            </p>
+<p>To cater to a variety of preferences, I opted to create three different templates - one with an image taking up 50% of total space, one with 33% image and a low-ink version with no image.</p>
+
+<p>I mapped out overlays of ½ and ⅓ folds while designing the layout of the page to ensure the folds don’t overlap content fields.</p>
+
+<p>This can only be done approximately due to the variable lengths of the text fields and their ability to expand, but the folds still lie in the white space between fields.</p>
+
+<p>I will develop a bar for the bottom of the page with modular fields containing all info, for maximum space efficiency. This will be used in all 3 formats for visual consistency and ease of use.</p>
+
+            
+
+           
         </div>
     </section>
 
@@ -186,61 +174,44 @@ I researched ticket/voucher designs online. I looked at some competitors’ vouc
             <h2>
                 Solution
             </h2>
-            <h4>First Illustrations - 2021
-            </h4>
+            <p>The general anatomy of the template can be split into three sections:</p>
+
+                <ul class="brief">
+                    <li>Decorative image (except for ink-saving version) and Hotel logo </li>
+                    <li>Voucher content & personal message</li>
+                    <li>Booking information </li>
+                </ul>
+
+<h4>Booking information component</h4>
+
+
+            
             <div class="row">
                 <div class="row">
                     <div class="column-full"><img class="large-image" src="/Assets\2021-1.png" alt="Direction Signpost"
                             width="100%">
                     </div>
-                    <div class="column-full"><img class="large-image" src="/Assets\2021-2.png" alt="Impact Focused"
-                            width="100%">
-                    </div>
+                    
                 </div>
                 <div class="column-full">
-                    <p>I created these two illustrations in Photoshop as I didn’t have access to Illustrator at the
-                        time. This
-                        presented
-                        significant challenges in crating clean and consistent shapes and managing resolution, as they
-                        were not
-                        created as
-                        vectors, but as pixel-based images. I was very inexperienced in creating graphics in this style
-                        when
-                        starting this
-                        project - it was a huge learning curve and a valuable opportunity to learn.</p>
-
+                    <p>My first priority was developing the field containing the booking information. I blocked out the necessary number of fields for the maximum amount of info, grouping fields by similarity. I ensured all the needed info was placed next to each other for ease of use.
+</p>
+<p>The old design evenly distributed all of the booking information across the page, which is possible as it doesn’t feature an image. My idea was to make a design with a large image possible by condensing and organising all the booking information into a much smaller space, and utilising that space more efficiently.
+</p>
+<p>I used PenPot flex boards to create the layout. This allowed me to mock up the concept using CSS flex. I used this to simulate how information fields re-format when different fields were hidden (opted out of by hotel clients), to mimic the behaviour of the final template.
+My aim was to account for all possibilities of hidden/visible fields so that the information bar would look aesthetically pleasing without any obvious blank spaces or overflow.
                 </div>
             </div>
 
+            
+ 
 
-            <p>There are many tweaks I would now make to these in terms of spacing, line consistency and balance.
-                However,
-                there
-                were also design elements such as the 10 degree line which, at the time, I was trying to incorporate
-                before we
-                made the decision to remove this from the branding. This offered a lot more flexibility in options for
-                graphics
-                and removed some implementation difficulties from the development end.</p>
 
-            <div class="card">
-                <h4 class="cardheader">Takeaways
-                </h4>
 
-                <ul class="brief">
-                    <li>Upgrading to Adobe Illustrator was a priority I identified for myself, to allow for a smoother
-                        and more
-                        professional workflow and enabling the switch to vector graphics.</li>
-                    <li>My interpretation of the style was positively received, and I got the go-ahead to be a bit
-                        experimental
-                        and
-                        playful with the imagery for future illustrations.</li>
-                    <li>I aimed to improve consistency and balance (which would be enabled by switching to a
-                        vector-based
-                        workflow)
-                        and further refine my skill in visually communicating ideas.</li>
 
-                </ul>
-            </div>
+            
+
+            
         </div>
     </section>
 
