@@ -33,6 +33,17 @@ position: relative;
   font-size: 16px;
 }
  
+.wrapper {
+  flex-direction:column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+margin: 5%;
+margin-top: 10%;
+
+}
+
 .spacer {
   padding-left:5%;
   padding-right:5%;
@@ -40,7 +51,8 @@ position: relative;
 }
 
 .vertical-spacer{
-margin-top: 5%
+margin-top: 5%;
+width:100%;
 }
 
 .centered {
@@ -69,6 +81,14 @@ h2 {
   
 }
 
+h3 {
+  color: white;
+  accent-color: white;
+  font-weight: 200;
+  font-size: 3em;
+  margin-bottom: 0em;
+  margin-top: 0;
+}
 
 h4 {
   color: white;
@@ -77,7 +97,13 @@ h4 {
   margin: 0;
 }
 
-
+.grid-header {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size:10rem;
+  line-height: 1em;
+  margin: 0;
+}
 
 p {
   color: hsl(0, 0%, 100%);
@@ -89,6 +115,13 @@ p.large-text {
   color: white;
   font-weight: 300;
   font-size: 1.5em;
+}
+
+p.xl-text {
+  color: white;
+  font-weight: 300;
+  font-size: 2.4rem;
+  padding: 10%
 }
 
 b {
@@ -137,6 +170,18 @@ nav {
  
 }
 
+.contents {
+  
+  color: white;
+  accent-color: white;
+  font-weight: 200;
+  font-size: 3em;
+  margin-bottom: 0em;
+  margin-top: 0;
+  text-align: left;
+}
+
+
 footer {
  position: absolute;
   bottom: 0px;
@@ -176,7 +221,7 @@ ul li a {
   text-align: center;
   padding: 14px 14px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 600;
 }
 
@@ -199,7 +244,7 @@ color: #ff4fbb;
   min-width: 7em;
   border-radius: 5px;
   font-family: 'Atkinson Hyperlegible Next';
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 600;
   font-size: 1em;
   
@@ -412,10 +457,70 @@ div.gallery-item div.desc {
   min-width:50%;
 }
 
+.gallery-image {
+  display: block;
+  width:100%;
+}
+
 .container {
-  display: flex;
-  min-width: 100%;
   
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  background-color: #bb33ff;
+  margin-left: 5%;
+  margin-right: 5%;
+    row-gap:10px;
+  column-gap:10px;
+  
+}
+
+
+.container div {
+  background-color: #9b5454;
+  text-align: left;
+  align-content: center;
+  
+  font-size: 2rem
+}
+
+
+
+.item1, .item7 {
+grid-column: 1 / span 8;
+}
+
+
+.item2 {
+  grid-row: span 2;
+  grid-column:  span 3;
+  
+}
+
+.item3, .item4 {
+grid-column:  span 5;
+}
+
+.item5, .item6 {
+  grid-column:  span 4;
+}
+
+.item8, .item10, .item11  {
+grid-column: span 5;
+}
+
+.item9{
+grid-column: span 3;
+grid-row: span 2;
+}
+
+.item12 {
+grid-column:  span 3;
+grid-row: span 4;
+
+}
+
+.item13 {
+  grid-column:  span 1;
 }
 
 .column-full {
