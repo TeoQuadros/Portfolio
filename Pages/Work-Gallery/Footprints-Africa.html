@@ -23,37 +23,39 @@
             <li><button class="pink-mode">Pink Mode</button></li>
     </nav>
 
-<button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top"><div>^</div></button>
+    <button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top">
+        <div>^</div>
+    </button>
 
 
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollToTopBtn = document.getElementById('ScrollBtn');
-  const scrollThreshold = 200; // Show button after scrolling 200px
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollToTopBtn = document.getElementById('ScrollBtn');
+            const scrollThreshold = 200; // Show button after scrolling 200px
 
-  window.onscroll = function() {scrollFunction()};
+            window.onscroll = function () { scrollFunction() };
 
-  function scrollFunction() {
-    if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-      scrollToTopBtn.style.display = "block";
-      scrollToTopBtn.style.opacity = "1"; // Make it appear
-    } else {
-      scrollToTopBtn.style.display = "none"; // Hide it completely
-      scrollToTopBtn.style.opacity = "0"; // Make it disappear
-    }
-  }
+            function scrollFunction() {
+                if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                    scrollToTopBtn.style.display = "block";
+                    scrollToTopBtn.style.opacity = "1"; // Make it appear
+                } else {
+                    scrollToTopBtn.style.display = "none"; // Hide it completely
+                    scrollToTopBtn.style.opacity = "0"; // Make it disappear
+                }
+            }
 
-  scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // This creates the visual, smooth scroll
-    });
-  });
-});
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // This creates the visual, smooth scroll
+                });
+            });
+        });
 
 
-</script>
+    </script>
 
     <section>
         <div class="spacer">
@@ -70,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <section>
         <div class="spacer">
             <h2>Concept</h2>
-            
+
             <div class="row">
 
                 <div class="row">
@@ -86,12 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         </p>
                         <p class="large-text">I created this vibrant set of illustrations to replace
                             stock
-                            photos in the card elements, to give the page a more cohesive feel. The colour palette and visual style are inspired by this header image for
-                            the page, by MUTI design studio (left). 
+                            photos in the card elements, to give the page a more cohesive feel. The colour palette and
+                            visual style are inspired by this header image for
+                            the page, by MUTI design studio (left).
                         </p>
-                    </div>                   
+                    </div>
                 </div>
-                
+
 
 
     </section>
@@ -105,21 +108,21 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="row">
                 <p class="large-text">I sampled my colour palette form the existing MUTI illustration, aiming to keep
-                    this cohesive with MUTI's image. 
+                    this cohesive with MUTI's image.
                     <br>Using the same shadow and highlight colours really helped to inform
                     the way I defined shape in my own graphics.
                 </p>
             </div>
     </section>
 
-    
+
 
     <section>
         <div class="spacer">
             <h2>Solution</h2>
             <div class="row">
                 <div class="column-full" id="img-row">
-                    <img class="full-image"  src="/Assets\Footprints-Africa\Construction.png">
+                    <img class="full-image" src="/Assets\Footprints-Africa\Construction.png">
                     <div class="desc">Construction</div>
                 </div>
                 <div class="column-full" id="img-row">
@@ -130,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img class="full-image" src="/Assets\Footprints-Africa\Plastics.png">
                     <div class="desc">Plastics</div>
                 </div>
-               <div class="column-full" id="img-row">
+                <div class="column-full" id="img-row">
                     <img class="full-image" src="/Assets\Footprints-Africa\Regen-Agriculture.png">
                     <div class="desc">Regen. Agriculture</div>
                 </div>
@@ -139,19 +142,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="desc">Random Selection</div>
                 </div>
             </div>
-             <p class="large-text">I took inspiration from the shape language of the original design, focusing
+            <p class="large-text">I took inspiration from the shape language of the original design, focusing
                 on capturing the flat, yet expressive illustrative style.</p>
         </div>
-        
+
     </section>
 
 
 
     <section>
         <div class="spacer">
-            
 
-                <div class="row">
+
+            <div class="row">
 
                 <div class="row">
                     <div class="column">
@@ -160,66 +163,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     </div>
                     <div class="column-small">
-                        <p class="large-text">The site displaying this work is unavailable as Footprints Africa is no longer
-                        an active
-                        organisation. This mockup displays how they looked while Footprints Africa was live.
-                    </p>
+                        <p class="large-text">The site displaying this work is unavailable as Footprints Africa is no
+                            longer
+                            an active
+                            organisation. This mockup displays how they looked while Footprints Africa was live.
                         </p>
-                        
-                    </div>                   
+                        </p>
+
+                    </div>
                 </div>
-                
-        </div>
+
+            </div>
     </section>
 
-<section>
-    <div class="spacer">
-        <div class="carousel">
-  <div class="carousel__content--wrapper">
-    <div class="carousel__content"> 
-      <label class="carousel__nav carousel__nav--prev" for="radio4"><</label>
-      <label class="carousel__nav carousel__nav--next" for="radio1">></label>
-      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Construction.png" alt="Image Description"/></figure>
-    </div>
-  </div>
-  <div class="carousel__content--wrapper">
-    <div class="carousel__content"> 
-      <label class="carousel__nav carousel__nav--prev" for="radio0"><</label>
-      <label class="carousel__nav carousel__nav--next" for="radio2">></label>
-      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\E-Waste.png" alt="Image Description"/></figure>
-    </div>
-  </div>
-  <div class="carousel__content--wrapper">
-    <div class="carousel__content"> 
-      <label class="carousel__nav carousel__nav--prev" for="radio1"><</label>
-      <label class="carousel__nav carousel__nav--next" for="radio3">></label>
-      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Plastics.png" alt="Image Description"/></figure>
-    </div>
-  </div>
-  <div class="carousel__content--wrapper">
-    <div class="carousel__content"> 
-      <label class="carousel__nav carousel__nav--prev" for="radio2"><</label>
-      <label class="carousel__nav carousel__nav--next" for="radio4">></label>
-      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Regen-Agriculture.png" alt="Image Description"/></figure>
-    </div>
-  </div>
-  <div class="carousel__content--wrapper">
-    <div class="carousel__content"> 
-      <label class="carousel__nav carousel__nav--prev" for="radio3"><</label>
-      <label class="carousel__nav carousel__nav--next" for="radio0">></label>
-      <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Random.png" alt="Image Description"/></figure>
-    </div>
-  </div>
-  <div class="carousel__pagination">
-    <input type="radio" id="radio0" name="selectedImage" checked="checked"/>
-    <input type="radio" id="radio1" name="selectedImage"/>
-    <input type="radio" id="radio2" name="selectedImage"/>
-    <input type="radio" id="radio3" name="selectedImage"/>
-    <input type="radio" id="radio4" name="selectedImage"/>
-  </div>
-</div>
-    </div>
-</section>
+    <section>
+        <div class="spacer">
+            <div class="carousel">
+                <div class="carousel__content--wrapper">
+                    <div class="carousel__content">
+                        <label class="carousel__nav carousel__nav--prev" for="radio4">
+                            <</label>
+                                <label class="carousel__nav carousel__nav--next" for="radio1">></label>
+                                <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Construction.png"
+                                        alt="Image Description" /></figure>
+                    </div>
+                </div>
+                <div class="carousel__content--wrapper">
+                    <div class="carousel__content">
+                        <label class="carousel__nav carousel__nav--prev" for="radio0">
+                            <</label>
+                                <label class="carousel__nav carousel__nav--next" for="radio2">></label>
+                                <figure class="carousel--img"><img src="/Assets\Footprints-Africa\E-Waste.png"
+                                        alt="Image Description" /></figure>
+                    </div>
+                </div>
+                <div class="carousel__content--wrapper">
+                    <div class="carousel__content">
+                        <label class="carousel__nav carousel__nav--prev" for="radio1">
+                            <</label>
+                                <label class="carousel__nav carousel__nav--next" for="radio3">></label>
+                                <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Plastics.png"
+                                        alt="Image Description" /></figure>
+                    </div>
+                </div>
+                <div class="carousel__content--wrapper">
+                    <div class="carousel__content">
+                        <label class="carousel__nav carousel__nav--prev" for="radio2">
+                            <</label>
+                                <label class="carousel__nav carousel__nav--next" for="radio4">></label>
+                                <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Regen-Agriculture.png"
+                                        alt="Image Description" /></figure>
+                    </div>
+                </div>
+                <div class="carousel__content--wrapper">
+                    <div class="carousel__content">
+                        <label class="carousel__nav carousel__nav--prev" for="radio3">
+                            <</label>
+                                <label class="carousel__nav carousel__nav--next" for="radio0">></label>
+                                <figure class="carousel--img"><img src="/Assets\Footprints-Africa\Random.png"
+                                        alt="Image Description" /></figure>
+                    </div>
+                </div>
+                <div class="carousel__pagination">
+                    <input type="radio" id="radio0" name="selectedImage" checked="checked" />
+                    <input type="radio" id="radio1" name="selectedImage" />
+                    <input type="radio" id="radio2" name="selectedImage" />
+                    <input type="radio" id="radio3" name="selectedImage" />
+                    <input type="radio" id="radio4" name="selectedImage" />
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
