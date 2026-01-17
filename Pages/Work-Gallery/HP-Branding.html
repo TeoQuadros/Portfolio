@@ -23,53 +23,110 @@
             <li><button class="pink-mode">Pink Mode</button></li>
     </nav>
 
-    <div class="wrapper">
+    <button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top">
+        <div>^</div>
+    </button>
 
-        <h1>
-            HappyPorch
-        </h1>
-        <div class="vertical-spacer">
-            <h3><a href="\Pages\index.html">the story</a></h3>
-            <h3><a href="\Pages\index.html">brand management</a></h3>
-            <h3><a href="\Pages\index.html">graphic illustration</a></h3>
-            <h3><a href="\Pages\index.html">social media graphics</a></h3>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollToTopBtn = document.getElementById('ScrollBtn');
+            const scrollThreshold = 200; // Show button after scrolling 200px
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                    scrollToTopBtn.style.display = "block";
+                    scrollToTopBtn.style.opacity = "1"; // Make it appear
+                } else {
+                    scrollToTopBtn.style.display = "none"; // Hide it completely
+                    scrollToTopBtn.style.opacity = "0"; // Make it disappear
+                }
+            }
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // This creates the visual, smooth scroll
+                });
+            });
+        });
+
+
+    </script>
+
+
+    <div class="screen-100">
+        <div class="spacer">
+            <h1>
+                HappyPorch
+            </h1>
+            <div class="vertical-spacer">
+                <h3><a href="#story">the story</a></h3>
+                <h3><a href="#branding">brand management</a></h3>
+                <h3><a href="#graphics">graphic illustration</a></h3>
+                <h3><a href="#social-media">social media graphics</a></h3>
+            </div>
         </div>
     </div>
 
-    <div class="wrapper">
-        <div class="vertical-spacer">
-            <h2>the story</h2>
-        </div>
 
-        <p class="large-text">
-            In 2021 I took on my first job as a designer for HappyPorch. Fresh out of uni, little did I know that my
-            self-taught digital design skills and the culture of growth at HappyPorch would lead to over four years of
-            ongoing partnership.
-        </p>
-        <p class="large-text">
-            The company was on the precipice of a full rebrand back then, so I was thrown right in the proverbial deep
-            end.
-        </p>
-        <p class="large-text">
-            The big-picture branding had already been developed but I got stuck into expanding our asset library and
-            implementing the new look across some pages of the HappyPorch website.
-        </p>
-        <p class="large-text">
-            As Barry’s trust in my vision and my confidence grew in parallel there was a shift from following these
-            guidelines to actively developing, maintaining and managing all visual aspects of HappyPorch’s brand
-            identity.
-        </p>
-        <p class="large-text">
-            I will admit that some of my earliest designs have glaring hallmarks of my inexperience as a designer.
-            However, this does create a cool opportunity to critique and rework some of my older designs - a process
-            which is ongoing as of 2025.
-        </p>
+    <div class="screen-100">
+        <div class="spacer">
+            <div class="vertical-spacer">
+                <div id="story">
+                    <h1>the story</h1>
+                </div>
+            </div>
+
+            <p class="large-text">
+                In 2021 I took on my first job as a designer for HappyPorch. Fresh out of uni, little did I know that my
+                self-taught digital design skills and the culture of growth at HappyPorch would lead to over four years
+                of
+                ongoing partnership.
+            </p>
+            <p class="large-text">
+                The company was on the precipice of a full rebrand back then, so I was thrown right in the proverbial
+                deep
+                end. The big-picture branding had already been developed but I got stuck into expanding our asset
+                library and
+                implementing the new look across some pages of the HappyPorch website. As Barry’s trust in my vision and
+                my confidence grew in parallel there was a shift from following these
+                guidelines to actively developing, maintaining and managing all visual aspects of HappyPorch’s brand
+                identity. I will admit that some of my earliest designs have glaring hallmarks of my inexperience as a
+                designer.
+                However, this does create a cool opportunity to critique and rework some of my older designs - a process
+                which is ongoing as of 2025.
+            </p>
+
+
+
+
+            <p class="large-text"><b><em>"Teo joined HappyPorch in 2021, initially on a short placement. We enjoyed
+                        working with them so much that we’ve done everything we can to keep them on the team ever
+                        since. Teo has been an outstanding member of HappyPorch. Their ability to quickly learn new
+                        technologies, processes, and skills strongly complements their artistic and design talents.
+                        They have developed their creative abilities into those of a professional UX/UI designer,
+                        with a solid understanding of accessibility, usability, and the technical aspects of
+                        effective web and mobile design. Teo communicates clearly, is intelligent, organised, and
+                        proactive, and is an asset to any team."</em></b>
+                <br>
+            </p>
+            <p class="large-text"><em>Barry O'Kane, Founder of <a href="https://www.happyporch.com/">HappyPorch</a></em>
+            </p>
+
+
+        </div>
     </div>
 
 
     <div class="container1">
         <div class="fullwidth">
-            <h1 class="grid-header">branding</h1>
+            <div id="branding">
+                <h1 class="grid-header">branding</h1>
+            </div>
         </div>
         <div class="fullwidth"><img class="gallery-image" src="/Assets\HappyPorchBranding\orangepalette.png"></div>
         <div class="oneby2"><img class="gallery-image" src="/Assets\HappyPorchBranding\MobileLayout.png"></div>
@@ -94,9 +151,12 @@
             <p class="xl-text">I embarked on a self-directed learning project all about web accessibility standards,
                 applying my newfound understanding of WCAG to our brand colours.</p>
         </div>
-        <div class="threebyfive"><img class="gallery-image" src="/Assets\HappyPorchBranding\SiteScreenshot.png"></div>
+        <div class="threebyfive"><img class="gallery-image" src="/Assets\HappyPorchBranding\SiteScreenshot.png">
+        </div>
         <div class="fivebyone">
-            <h1 class="grid-header">graphic illustration</h1>
+            <div id="graphics">
+                <h1 class="grid-header">graphic illustration</h1>
+            </div>
         </div>
 
         <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\HappyPorchGraphics\Climate_2022.png">
@@ -105,15 +165,18 @@
         </div>
         <div class="onebyone"><img class="gallery-image"
                 src="/Assets\Case Studies\HappyPorchGraphics\TeamCulture_2022.png"></div>
-        <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\HappyPorchGraphics\Diversity_2022.png">
+        <div class="onebyone"><img class="gallery-image"
+                src="/Assets\Case Studies\HappyPorchGraphics\Diversity_2022.png">
         </div>
         <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\HappyPorchGraphics\ProBono_2022.png">
         </div>
         <div class="onebyone"><img class="gallery-image"
                 src="/Assets\Case Studies\HappyPorchGraphics\Governance_2023.png"></div>
-        <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\HappyPorchGraphics\Community_2023.png">
+        <div class="onebyone"><img class="gallery-image"
+                src="/Assets\Case Studies\HappyPorchGraphics\Community_2023.png">
         </div>
-        <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\HappyPorchGraphics\Customers_2023.png">
+        <div class="onebyone"><img class="gallery-image"
+                src="/Assets\Case Studies\HappyPorchGraphics\Customers_2023.png">
         </div>
         <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\HappyPorchGraphics\Workers_2023.png">
         </div>
@@ -127,7 +190,8 @@
         <div class="onebyone"><img class="gallery-image"
                 src="/Assets\Case Studies\HappyPorchGraphics\Leading-the-way.png"></div>
 
-        <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\HappyPorchGraphics\Homegrown-code.png">
+        <div class="onebyone"><img class="gallery-image"
+                src="/Assets\Case Studies\HappyPorchGraphics\Homegrown-code.png">
         </div>
         <div class="onebyone"><img class="gallery-image"
                 src="/Assets\Case Studies\HappyPorchGraphics\Leading-the-way.png"></div>
@@ -139,33 +203,49 @@
         <div class="twobytwo"><img class="gallery-image" src="/Assets\HappyPorchBranding\CircularEconomy.png"></div>
         <div class="twobytwo"><img class="gallery-image" src="/Assets\HappyPorchBranding\CommsDoodle.png"></div>
         <div class="fourbytwo-outline">
-            <p class="xl-text">Read the deep-dive about the design process of the HappyPorch graphic library here.</p>
+            <p class="xl-text">Read the deep-dive about the design process of the HappyPorch graphic library here.
+            </p>
         </div>
-        <div class="fourbyone-outline">
+        <div class="fivebyone-outline">
             <p class="xl-text">Seasons greetings from HappyPorch!<br>One of my favourite little projects ></p>
         </div>
+
+        <div class="row">
+            <img class="floating-image" src="/Assets\HappyPorchBranding\Chrismas2024.png">
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
         <div class="eightbyone"><img class="gallery-image" src="/Assets\HappyPorchBranding\Homepage.png"></div>
         <div class="eightbyone">
-            <h1 class="grid-header">social media / marketing</h1>
+            <div id="social-media">
+                <h1 class="grid-header">social media / marketing</h1>
+            </div>
         </div>
         <div class="twobyone"><img class="gallery-image" src="/Assets\ReNew.png"></div>
         <div class="twobyone"><img class="gallery-image" src="/Assets\BCorp Recertification.png"></div>
         <div class="fourbyone"><img class="gallery-image" src="/Assets\HappyPorchBranding\ArticleCover.png"></div>
-        <div class="fourbyone"><img class="gallery-image" src="/Assets\HappyPorchBranding\Re-commerce In Fashion.png"></div>
+        <div class="fourbyone"><img class="gallery-image" src="/Assets\HappyPorchBranding\Re-commerce In Fashion.png">
+        </div>
         <div class="twobyone"><img class="gallery-image" src="/Assets\2023 carbon footprint.png"></div>
         <div class="twobyone"><img class="gallery-image" src="/Assets\HappyPorchBranding\Retool.png"></div>
 
         <div class="eightbyone-outline">
             <p class="xl-text">When designing for socials, I keep in mind that the software industry is full of
                 polished, corporate styling, and Barry is keen to set HappyPorch apart in this regard. I add playful
-                touches like the doodle graphics and a conversational tone. While still incorporating technical imagery,
+                touches like the doodle graphics and a conversational tone. While still incorporating technical
+                imagery,
                 I reflect the company’s commitment to people and the planet by letting the designs feel warm,
                 approachable and human.</p>
         </div>
         <div class="fourbyone"><img class="gallery-image" src="/Assets\HappyPorchBranding\Banner.png"></div>
         <div class="fourbytwo"><video class="gallery-image" controls
                 src="/Assets\HappyPorchBranding\ClimateImpact-Promo.mp4"></div>
-        <div class="threebyfour"><video class="gallery-image" controls src="/Assets\HappyPorchBranding\ImpactReport.mp4">
+        <div class="threebyfour"><video class="gallery-image" controls
+                src="/Assets\HappyPorchBranding\ImpactReport.mp4">
 
 
 
@@ -178,7 +258,8 @@
 
     </div>
 
-    <div class="wrapper">
+
+    <div class="spacer">
 
         <h1>
             want to see more?
@@ -189,22 +270,28 @@
             <h3><a href="\Pages\index.html">Community Cred <sup>web design</sup></a></h3>
             <h3><a href="\Pages\index.html">SK Chase <sup>visual design / UX</sup></a></h3>
         </div>
+
+    </div>
+    <div class="wrapper">
+        <footer class="gallery-footer">
+            <div class="footer-item">
+                <p class="extra-small">©Teo Quadros,
+                    <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                </p>
+            </div>
+            <div class="footer-item">
+                <p class="extra-small">All work is mine unless otherwise credited (please don't steal my shit)</p>
+            </div>
+            <div class="footer-item">
+                <p class="extra-small"><a href="/Pages\Privacy-Policy.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+    </div>
     </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-    ...
 </body>
 
 </html>
