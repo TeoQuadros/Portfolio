@@ -27,51 +27,51 @@
 
 
   <section>
-    <div class="spacer">
-      <div class="hero-text">
-        <h1>
-          Hello there :)
-        </h1>
-        
-      </div>
-      <h2><a class="copy-link" href="mailto:teo.a.quadros@gmail.com">teo.a.quadros@gmail.com</a></h2>
+
+    <div class="hero-text">
+      <h1>
+        Hello there :)
+      </h1>
+
+    </div>
+    <h2><a class="copy-link" href="mailto:teo.a.quadros@gmail.com">teo.a.quadros@gmail.com</a></h2>
 
 
 
 
-      <script>
-        const mailtoLinks = document.querySelectorAll('a[href^="mailto:"]');
-        mailtoLinks.forEach(link => {
-          const email = link.href.replace('mailto:', '').split('?')[0];
-          link.dataset.email = email;
-          link.addEventListener('click', function (e) {
-            e.preventDefault();
+    <script>
+      const mailtoLinks = document.querySelectorAll('a[href^="mailto:"]');
+      mailtoLinks.forEach(link => {
+        const email = link.href.replace('mailto:', '').split('?')[0];
+        link.dataset.email = email;
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
 
-            // Copy email to clipboard
-            navigator.clipboard.writeText(email);
+          // Copy email to clipboard
+          navigator.clipboard.writeText(email);
 
-            try {
-              // Show feedback to user
-              const originalText = link.textContent;
-              link.textContent = 'Email copied!';
+          try {
+            // Show feedback to user
+            const originalText = link.textContent;
+            link.textContent = 'Email copied!';
 
-              // Reset text after 2 seconds
-              setTimeout(() => {
-                link.textContent = originalText;
-              }, 2000);
-            }
-            catch (err) {
-              console.error('Failed to copy email:', err);
-              alert('Could not copy email address. Please try again.');
-            }
-          });
-
-          // Add a title attribute for hover tooltip
-          link.title = `Click to copy: ${email}`;
+            // Reset text after 2 seconds
+            setTimeout(() => {
+              link.textContent = originalText;
+            }, 2000);
+          }
+          catch (err) {
+            console.error('Failed to copy email:', err);
+            alert('Could not copy email address. Please try again.');
+          }
         });
-      </script>
 
-<footer>
+        // Add a title attribute for hover tooltip
+        link.title = `Click to copy: ${email}`;
+      });
+    </script>
+
+    <footer>
       <div class="footer-item">
         <p class="extra-small">©Teo Quadros,
           <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>

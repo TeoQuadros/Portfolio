@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Em Quadros 2025 Portfolio</title>
+    <link href="/Pages\styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="\Pages\index.html">Home</a></li>
+            <li><a href="\Pages\About.html">About</a></li>
+            <li><a href="\Pages\Work.html">Work</a></li>
+            <li><a href="\Pages\Contact.html">Contact</a></li>
+            <li><button class="pink-mode">Pink Mode</button></li>
+    </nav>
+
+    <button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top">
+        <div>^</div>
+    </button>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollToTopBtn = document.getElementById('ScrollBtn');
+            const scrollThreshold = 200; // Show button after scrolling 200px
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                    scrollToTopBtn.style.display = "block";
+                    scrollToTopBtn.style.opacity = "1"; // Make it appear
+                } else {
+                    scrollToTopBtn.style.display = "none"; // Hide it completely
+                    scrollToTopBtn.style.opacity = "0"; // Make it disappear
+                }
+            }
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // This creates the visual, smooth scroll
+                });
+            });
+        });
+
+
+    </script>
+
+
+    <div class="screen-100">
+        <div class="spacer">
+            <h1>
+                Footprints Africa
+            </h1>
+            <div class="vertical-spacer">
+                <h3><a href="#story">the story</a></h3>
+                <h3><a href="#development">development</a></h3>
+                <h3><a href="#illustrations">illustrations</a></h3>
+                <h3><a href="#reflections">reflections</a></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="screen-100">
+        <div class="spacer">
+            <div class="vertical-spacer">
+                <div id="story">
+                    <h1>the story</h1>
+                </div>
+            </div>
+
+            <p class="large-text">
+                African Circular Economy Network (ACEN) is a non-profit organisation working to advance sustainable
+                development of local African economies. HappyPorch collaborated with Footprints Africa, offering a
+                pro-bono project to create a platform to display their African circular economy case studies.
+            </p>
+            <p class="large-text">
+                The aim of this site was to showcase success stories of circular economy initiatives across the
+                continent of Africa, taking the user on an interactive virtual ‘journey’ to explore how circular
+                principles are uplifting local African communities and economies.
+            </p>
+            <p class="large-text">
+                The site was already up, running and looking great when I joined the project. I was tasked with creating
+                some small illustrations, following the existing visual style, to replace stock images that were
+                clashing a bit with their otherwise vibrant, bespoke aesthetic.
+            </p>
+            <p class="large-text">
+                Sadly, the site as it’s no longer active, but I’ve included a few mockups of my illustrations in
+                context.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container1">
+        <div class="fullwidth">
+            <div id="development">
+                <h1 class="grid-header">development</h1>
+            </div>
+        </div>
+        <div class="fullwidth"><img class="gallery-image" src="/Assets\Footprints-Africa\AfricanStories-Palette.png">
+        </div>
+        <div class="twobyone"><img class="gallery-image" src="/Assets\Footprints-Africa\Map illustation.png">
+        </div>
+        <div class="threebyone-outline">
+            <p class="large-text">
+                I created the colour palette by using the same colours as in the this header image for the page, made by
+                MUTI design studio (left).
+            </p>
+            <p class="large-text">
+                This image was the driving inspiration for the site’s styling, so I also used the shape language of
+                MUTI’s illustration to inform the style of my own designs.
+            </p>
+        </div>
+        <div class="threebyone-outline">
+            <p class="large-text">These two drafts experiment with the colour scheme and motifs. They’re a bit rough
+                around the edges, but
+                helped to define my approach to the rest of the illustrations
+            </p>
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Footprints-Africa\Global-circularity.png">
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Footprints-Africa\Footprints-journey.png">
+        </div>
+
+        <div class="fullwidth" id="illustrations">
+            <h1 class="grid-header">illustrations</h1>
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Footprints-Africa\Regen-Agriculture.png">
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Footprints-Africa\Construction.png">
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Footprints-Africa\Plastics.png">
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Footprints-Africa\E-Waste.png">
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Footprints-Africa\Random.png">
+        </div>
+        <div class="twobyone-outline">
+            <p class="large-text"><b>Colour</b>
+                <br>Each image features one main colour from the palette to offer a distinctive look.
+            </p>
+        </div>
+        <div class="twobyone-outline">
+            <p class="large-text"><b>Line</b>
+                <br>I use lines to create movement and visual consistency.
+            </p>
+        </div>
+        <div class="onebytwo"><img class="gallery-image" src="/Assets\Footprints-Africa\ACEN-page-screenshot.png">
+        </div>
+        <div class="fourbytwo"><img class="gallery-image" src="/Assets\Footprints-Africa\ACEN-contextual.png">
+        </div>
+        <div class="onebyone-outline">
+            <p class="large-text">
+                < This mockup shows the graphics contextually as they were displayed on the website. </p>
+        </div>
+
+        <div class="fullwidth" id="reflections">
+            <h1 class="grid-header">reflections</h1>
+        </div>
+        <div class="fullwidth-outline">
+            <p>
+                I haven’t worked in a style like this before, but I enjoyed the challenge of creating motifs in this
+                almost cut-paper, flat expressive style.</p>
+            <p>
+                I feel that the ‘e-waste’ illustration is the weakest as it doesn’t follow the colour & line expressions
+                of the others as effectively. The red doesn’t feel predominant, there isn’t any linework in the
+                background as there is in the others. I’d also remove the dark blue accents from the tech, as I feel as
+                it uses too many colours compared to the others. This one could probably use a rework, but overall I
+                feel that they look good together and nicely fit their brief and purpose.</p>
+            <p>
+                A tight colour palette and expression of complex ideas through simple shapes is always a great exercise
+                in restraint and intentionality. It definitely gave me an appetite to create and play with bold colour
+                schemes and experiment with visual styles i’d usually not gravitate towards. </p>
+        </div>
+    </div>
+
+
+    <div class="spacer">
+
+        <h1>
+            want to see more?
+        </h1>
+        <div class="vertical-spacer">
+            <h3><a href="\Pages\index.html">HappyPorch<sup>brand design/graphics</sup></a></h3>
+            <h3><a href="\Pages\index.html">HappyPorch Radio <sup>brand design</sup></a></h3>
+            <h3><a href="\Pages\index.html">Community Cred <sup>web design</sup></a></h3>
+            <h3><a href="\Pages\index.html">SK Chase <sup>visual design / UX</sup></a></h3>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <footer class="gallery-footer">
+            <div class="footer-item">
+                <p class="extra-small">©Teo Quadros,
+                    <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                </p>
+            </div>
+            <div class="footer-item">
+                <p class="extra-small">All work is mine unless otherwise credited (please don't steal my shit)</p>
+            </div>
+            <div class="footer-item">
+                <p class="extra-small"><a href="/Pages\Privacy-Policy.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

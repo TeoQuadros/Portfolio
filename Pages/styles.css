@@ -25,11 +25,10 @@ position: relative;
   scroll-snap-stop: always;
   flex-direction:column;
   display: flex;
-  align-items: center;
   justify-content: center;
   align-items: flex-start;
-  height: 100%;
   width: 100%;
+  height:100vh; 
   font-size: 16px;
   padding-left:5%;
   padding-right:5%;
@@ -255,6 +254,20 @@ a:hover {
   text-decoration: underline ;
   text-decoration-color: #ff4fbb;
   transition: 1s;
+}
+
+#bullet-list{
+list-style: circle;
+list-style-type: circle;
+
+}
+
+#bullet-item{
+  list-style: circle;
+list-style-type: circle;
+color: white;
+  font-weight: 300;
+  font-size: 1em;
 }
 
 ul li {
@@ -544,6 +557,19 @@ width: 30%;
 grid-column: 1 / span 5;
 }
 
+.fullwidth-outline {
+grid-column: span 5;
+border-style: solid;
+ border-color: white;
+}
+
+.oneby1 {
+grid-column: span 1;
+
+}
+
+
+
 .oneby2 {
 grid-column: 1 / span 1;
 grid-row: span 2;
@@ -552,6 +578,20 @@ grid-row: span 2;
 .twoby1 {
 grid-column: span 2;
 
+}
+
+.twoby1-outline {
+grid-column: span 2;
+border-style: solid;
+ border-color: white;
+}
+
+.threeby2-outline {
+grid-column: span 3;
+grid-row: span 2;
+border-style: solid;
+ border-color: white;
+ padding:5%
 }
 
 .container {
@@ -582,16 +622,35 @@ grid-column: span 2;
 
 
 
-
-
-
+#worksans {
+  grid-column: 4/ span 2;
+}
 
 .onebyone {
 grid-column:  span 1;
 }
 
+.onebyone-outline {
+grid-column:  span 1;
+border-style: solid;
+ border-color: white;
+ padding:5%
+}
+
+.onebytwo {
+  grid-column:  span 1;
+  grid-row: span 2;
+}
+
 .twobyone {
  grid-column:  span 2;
+}
+
+.twobyone-outline {
+  grid-column:  span 2;
+  border-style: solid;
+ border-color: white;
+ padding:5%
 }
 
 .twobytwo {
@@ -599,9 +658,45 @@ grid-column:  span 2;
   grid-row: span 2;
 }
 
+.twobytwo-outline {
+  grid-column:  span 2;
+  grid-row: span 2;
+  border-style: solid;
+ border-color: white;
+ padding:5%
+}
+
+.twobythree {
+grid-column: span 2;
+grid-row: span 3;
+}
+
+.twobyfive {
+grid-column: span 2;
+grid-row: span 5;
+}
+
+.threebyone {
+  grid-column: span 3;
+}
+
+.threebyone-outline {
+grid-column: span 3;
+border-style: solid;
+ border-color: white;
+ padding:5%
+}
+
 .threebytwo {
 grid-column: span 3;
 grid-row: span 2;
+}
+
+.threebytwo-outline {
+grid-column: span 3;
+grid-row: span 2;
+border-style: solid;
+ border-color: white;
 }
 
 .threebythree {

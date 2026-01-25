@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Em Quadros 2025 Portfolio</title>
+    <link href="/Pages\styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="\Pages\index.html">Home</a></li>
+            <li><a href="\Pages\About.html">About</a></li>
+            <li><a href="\Pages\Work.html">Work</a></li>
+            <li><a href="\Pages\Contact.html">Contact</a></li>
+            <li><button class="pink-mode">Pink Mode</button></li>
+    </nav>
+
+    <button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top">
+        <div>^</div>
+    </button>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollToTopBtn = document.getElementById('ScrollBtn');
+            const scrollThreshold = 200; // Show button after scrolling 200px
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                    scrollToTopBtn.style.display = "block";
+                    scrollToTopBtn.style.opacity = "1"; // Make it appear
+                } else {
+                    scrollToTopBtn.style.display = "none"; // Hide it completely
+                    scrollToTopBtn.style.opacity = "0"; // Make it disappear
+                }
+            }
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // This creates the visual, smooth scroll
+                });
+            });
+        });
+
+
+    </script>
+
+
+    <div class="screen-100">
+        <div class="spacer">
+            <h1>
+                CommunityCred
+            </h1>
+            <div class="vertical-spacer">
+                <h3><a href="#story">the story</a></h3>
+                <h3><a href="#development">development</a></h3>
+                <h3><a href="#visual-elements">visual elements</a></h3>
+                <h3><a href="#reflections">reflections</a></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="screen-100">
+        <div class="spacer">
+            <div class="vertical-spacer">
+                <div id="story">
+                    <h1>the story</h1>
+                </div>
+            </div>
+
+            <p class="large-text">
+                On its website, CommunityCred defines itself as:
+                “a feasibility study exploring the potential for a mutual credit system to accelerate Scotland's
+                transition to a circular economy and promote community wealth building. Our platform maps local trading
+                networks, identifies opportunities for resource sharing, and supports the development of sustainable
+                local supply chains.”
+            </p>
+            <p class="large-text">
+                My role within the project was to take a basic wireframe of a site in development and create a clean,
+                polished and friendly design to overlay the existing basic structure. There was no creative direction or
+                existing branding, so I had full free rein over the direction - other than a request to incorporate a
+                hand-drawn style.
+            </p>
+            <p class="large-text">
+                I had to take this project from basic wireframes - to a cohesive design within a day. Complex custom
+                illustrations or highly experimental elements were out of the question, in favour of a solid font,
+                colour palette and element styling.
+                I was also mindful of the complexity/time-intensity of the design in terms of frontend dev work, and
+                tried to think about the most straightforward styling changes that would have maximum impact, as there
+                was only 1 week to for the developer to implement the design.
+            </p>
+            <p class="large-text">
+                Mindful of time constraints, I chose to focus on 4 key areas: Font, Colour, Component Style and Accents.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container1">
+        <div class="fullwidth">
+            <div id="development">
+                <h1 class="grid-header">development</h1>
+            </div>
+        </div>
+        <div class="twobyone"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\CC-site-unstyled.png">
+        </div>
+        <div class="threebytwo-outline">
+            <p class="large-text">
+                < These two images are how I started my day: </p>
+                    <p class="large-text">
+                        The unstyled site offered context of the current state of development and laid out some of the
+                        necessary copy.
+                    </p>
+                    <p class="large-text">I was provided with a basic wireframe of the home page which gave me an idea
+                        of
+                        functionality, and I started by creating elements necessary for putting this page together.
+                    </p>
+        </div>
+
+        <div class="twobyone"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\CC-wireframe.png">
+        </div>
+        <div class="fullwidth-outline">
+            <p>My approach to this project was quick implementation, large visual impact. I aimed to use basic visual
+                styling effectively to create an identity that isn’t reliant on custom graphics, or complex development
+                work, incorporating the client request for a hand-drawn feel while keeping the overall aesthetic fit for
+                purpose and target user.</p>
+        </div>
+
+
+
+
+        <div class="fullwidth" id="visual-elements">
+            <h1 class="grid-header">visual elements</h1>
+        </div>
+        <div class="fullwidth-outline">
+            <p>I started by looking at CommunityCred’s mission statement:</p>
+
+            <p>“By connecting local businesses, social enterprises, charities, and community groups, we aim to
+                strengthen local economies while promoting environmental sustainability and social inclusion.”</p>
+        </div>
+        <div class="threebyone"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\CC-Branding.png">
+        </div>
+
+        <div class="twoby1-outline">
+            <p>From this, I identified some key tonal characteristics to help direct my creative choices:</p>
+            <ul id="bullet-list">
+                <li id="bullet-item"><b>Community-focused:</b> friendly, warm, accessible</li>
+                <li id="bullet-item"><b>For businesses, social enterprises, charities, community groups:
+                    </b>trustworthy, clean, professional</li>
+            </ul>
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\DarkBlue-Swatch.png">
+        </div>
+        <div class="fourbyone-outline">
+            <p>#1e0060: Dark blue is very often used in the financial sector to communicate safety, stability and
+                professionalism. This one leans towards purple - pulling in a little red to warm up the overall feel,
+                adding a sense of playfulness and innovation.</p>
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\LightBlue-Swatch.png">
+        </div>
+        <div class="fourbyone-outline">
+            <p>#fff6f2: For secondary use. Pops against warm background and harmonises with the deep blue.</p>
+        </div>
+        <div class="onebyone"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\Cream-Swatch.png">
+        </div>
+        <div class="fourbyone-outline">
+            <p>#fff6f2: Used as the background colour. Gentler on the eyes then a plain white background. Intended to
+                elicit a sense of warmth.</p>
+        </div>
+
+        <div class="fullwidth"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\Mazaeni-H1.png">
+        </div>
+
+        <div class="twobytwo-outline">
+            <p>Hero/H1: This bold serif typeface offers a sense of joyful simplicity, grounded in elegance. As
+                CommunityCred has no logo at this time, I chose a display font which can hold its own - on the navbar as
+                a typography logo and as a bold, striking H1.</p>
+
+        </div>
+        <div id="worksans" class="twobyone"><img class="gallery-image"
+                src="/Assets\Case Studies\CommunityCred\work-sans-bodytext.png">
+        </div>
+        <div class="threebyone-outline">
+            <p>Body/Subheading: Work Sans is a friendly, legible sans serif that looks pleasing at regular and bold
+                weights. I chose this custom body font to add character with minimal visual fatigue. Keeping in mind the
+                client request for a hand-drawn feel, I used this font as a compromise - as it feels soft and welcoming
+                while maintaining a visually clean and professional feel which may be lost with a handwriting font.</p>
+
+        </div>
+
+
+        <div class="twobyone"><img class="gallery-image"
+                src="/Assets\Case Studies\CommunityCred\Arrow_Illustration.png">
+        </div>
+        <div class="threebyone-outline">
+            <p>To try and bring in some of the ‘hand drawn’ feel, I opted for visible borders around some elements -
+                mixing dashed lines and solid lines for added character, and to help define some visual hierarchy.</p>
+            <p>As there was no time for custom/complex graphics, I created some simple line art in Penpot to add a touch
+                of movement and visual interest to the homepage. This could provide a basis for a set of similar line
+                graphics in the future.</p>
+        </div>
+
+        <div class="fullwidth" id="design">
+            <h1 class="grid-header">design</h1>
+        </div>
+
+        <div class="fullwidth"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\CC-flow.png">
+        </div>
+        <div class="threebyone"><img class="gallery-image"
+                src="/Assets\Case Studies\CommunityCred\CC-patternlibrary.png">
+        </div>
+
+
+
+        <div class="twobyone-outline">
+            <p class="large-text">I used PenPot flex layouts to accelerate the transition to code.
+            </p>
+            <p class="large-text">I kept the pattern library and designs light and simple, designing only components
+                that would be needed for the site in its current form.
+            </p>
+        </div>
+
+        <div class="twobytwo"><img class="gallery-image"
+                src="/Assets\Case Studies\CommunityCred\CC-site-screenshot.png">
+        </div>
+        <div class="threebyone-outline">
+            <p>This side-by-side shows how my design was implemented by the dev. I was happy to see
+                that I scoped the design realistically, so that it could be implemented within the allotted time.
+            </p>
+        </div>
+
+        <div class="threebythree"><img class="gallery-image" src="/Assets\Case Studies\CommunityCred\CC-sidebyside.png">
+        </div>
+
+        <div class="twobytwo-outline">
+            <p>^ This page from the site displays elements from the pattern library being used on a
+                page I didn’t design myself.
+            </p>
+        </div>
+
+        <div class="fullwidth-outline">
+            <h1 class="grid-header">take a look at
+                <a href="https://communitycred.scot/">CommunityCred.scot</a>
+            </h1>
+        </div>
+    </div>
+    <div class="vertical-spacer">
+        <div class="container1">
+            <div class="fullwidth-outline">
+                <p>The feedback process was unfortunately almost nonexistent due to the time constraints of the project,
+                    so there was little opportunity for feedback/iteration cycles. However, I did have a few hours to
+                    audit the code once it was applied to the site, suggesting small styling tweaks to polish it
+                    further.
+                </p>
+                <p>The final site quite closely resembles the mockups created in Penpot, other than some small details:
+                </p>
+                <ul id="bullet-list">
+                    <li id="bullet-item">dashed line in Penpot vs final site (the rounded edges were a deliberate choice
+                        to try and bring in the ‘hand drawn’ feel as requested, but there was no time to implement this
+                        level of detail)
+                        .</li>
+                    <li id="bullet-item">The overall look could have bene refined further by defining spacing & text
+                        hierarchies in more detail, but time was so limited that I prioritised big-picture decisions in
+                        this case.</li>
+                </ul>
+                <p>This was a very valuable learning experience, and I had a lot of fun with the whirlwind design
+                    process. It really forced me to apply my own creative constraints to make something coherent in such
+                    a short space of time. To trust my instincts when there was no time for in-depth research or
+                    planning. Figuring out how to base a design off of the concept of ‘hand drawn’, whilst ensuring a
+                    sense of warm, friendly professionalism.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="spacer">
+
+        <h1>
+            want to see more?
+        </h1>
+        <div class="vertical-spacer">
+            <h3><a href="\Pages\index.html">HappyPorch<sup>brand design/graphics</sup></a></h3>
+            <h3><a href="\Pages\index.html">HappyPorch Radio <sup>brand design</sup></a></h3>
+            <h3><a href="\Pages\index.html">Footprints Africa <sup>graphic illustation</sup></a></h3>
+            <h3><a href="\Pages\index.html">SK Chase <sup>visual design / UX</sup></a></h3>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <footer class="gallery-footer">
+            <div class="footer-item">
+                <p class="extra-small">©Teo Quadros,
+                    <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                </p>
+            </div>
+            <div class="footer-item">
+                <p class="extra-small">All work is mine unless otherwise credited (please don't steal my shit)</p>
+            </div>
+            <div class="footer-item">
+                <p class="extra-small"><a href="/Pages\Privacy-Policy.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

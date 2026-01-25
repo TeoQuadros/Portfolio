@@ -23,80 +23,106 @@
       <li><button class="pink-mode">Pink Mode</button></li>
   </nav>
 
+  <button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top">
+    <div>^</div>
+  </button>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrollToTopBtn = document.getElementById('ScrollBtn');
+      const scrollThreshold = 200; // Show button after scrolling 200px
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+          scrollToTopBtn.style.display = "block";
+          scrollToTopBtn.style.opacity = "1"; // Make it appear
+        } else {
+          scrollToTopBtn.style.display = "none"; // Hide it completely
+          scrollToTopBtn.style.opacity = "0"; // Make it disappear
+        }
+      }
+
+      scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // This creates the visual, smooth scroll
+        });
+      });
+    });
+
+
+  </script>
+
+
+
+
   <section>
-    <div class="spacer">
+
+
+    <h1>
+      work
+    </h1>
+    <div class="vertical-spacer">
+      <h3><a href="#story">the story</a></h3>
+      <h3><a href="#development">development</a></h3>
+      <h3><a href="#visual-elements">visual elements</a></h3>
+      <h3><a href="#reflections">reflections</a></h3>
+    </div>
+
+
+
+  </section>
+
+  <section>
+
     <div class="hero-text">
       <h1>
         My Work
       </h1>
-      <h2>> Projects</h2>
-      <h2>> Case studies - a deeper dive</h2>
+      <div>
+        <a href="Case Study - HappyPorch Illustrations.html">
+          <h2>HappyPorch </h2>
+        </a>
+
+        <a href="/Pages\Work-Gallery\CommunityCred.html">
+          <h2>Communtity Cred<sup>dhdus</sup></h2>
+        </a>
+
+        <a href="CaseStudy-SKCVoucherRedesign.html">
+          <h2>SK Chase</h2>
+        </a>
+        <a href="CaseStudy-SKCVoucherRedesign.html">
+          <h2>African Stories</h2>
+        </a>
       </div>
-      </div>
+    </div>
+    </div>
   </section>
+
 
 
   <section>
     <div>
-      <img class="fullscreen-image" src="/Assets\CTM-Cover.png">
-    </div>
+      <a href="Case Study - HappyPorch Illustrations.html">
+        <h2>HappyPorch </h2>
+      </a>
 
-  </section>
+      <a href="Case Study - CommunityCred.html">
+        <h2>Communtity Cred<sup>dhdus</sup></h2>
+      </a>
 
-  <a href="">
-  <section>
-    <div class="imagetest1">
-      <img src="/Assets\CTMTransparent.png">
-    </div>
-
-  </section>
-</a>
-
- <a href="/Pages\Work-Gallery\Footprints-Africa.html">
-  <section>
-    <div class="imagetest1">
-      <h2>Footprints Africa</h2>
+      <a href="CaseStudy-SKCVoucherRedesign.html">
+        <h2>SK Chase</h2>
+      </a>
+      <a href="CaseStudy-SKCVoucherRedesign.html">
+        <h2>African Stories</h2>
+      </a>
     </div>
   </section>
-</a>
-
-<a href="/Pages\Work-Gallery\HP-Branding.html">
-  <section>
-    <div class="imagetest1">
-      <img src="/Assets\HappyPorchBrandingCover.png">
-    </div>
-  </section>
-</a>
-
-<a href="/Pages\Work-Gallery\ECEN.html">
-  <section>
-    <div class="imagetest1">
-      <h2>Edinburgh Circular Economy Network</h2>
-    </div>
-  </section>
-</a>
-
-  <section>
-    <div class="imagetest1">
-      <h2>SK Chase Voucher Redesign</h2>
-    </div>
-
-  </section>
-
-
-<section>
-  <div>
-    <a href="Case Study - CommunityCred.html">
-      <h2>Case Study: Communtity Cred</h2>
-    </a>
-    <a href="Case Study - HappyPorch Illustrations.html">
-      <h2>Case Study: HappyPorch </h2>
-    </a>
-    <a href="CaseStudy-SKCVoucherRedesign.html">
-      <h2>Case Study: SK Chase Voucher Redesign </h2>
-    </a>
-  </div>
-</section>
 
 
 
