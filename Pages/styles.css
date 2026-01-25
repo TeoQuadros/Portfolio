@@ -30,8 +30,8 @@ position: relative;
   width: 100%;
   height:100vh; 
   font-size: 16px;
-  padding-left:5%;
-  padding-right:5%;
+  padding-left:10%;
+  padding-right:10%;
 }
  
 .wrapper {
@@ -166,6 +166,7 @@ blockquote {
 sup {
   font-size: 0.5em;
 }
+
 nav {
   position: sticky;
   top: 0px;
@@ -237,42 +238,50 @@ footer {
 
 .extra-small {
 font-size: small;
+
 }
 
 .footer-item {
   margin-right: 20px;
   margin-left: 20px;
+
 }
 
 a {
   text-decoration: underline solid transparent;
-  transition: text-decoration 1s ease;
-  transition: 1s;
+  text-decoration-thickness: 0.1em;
+  transition:  1s ease;
+  
 }
 
 a:hover {
   text-decoration: underline ;
+  text-decoration-thickness: 0.1em;
   text-decoration-color: #ff4fbb;
   transition: 1s;
+
 }
 
-#bullet-list{
+#bullet-list {
 list-style: circle;
 list-style-type: circle;
+padding-left: 20px;
 
 }
 
-#bullet-item{
+#bullet-item {
   list-style: circle;
 list-style-type: circle;
 color: white;
   font-weight: 300;
   font-size: 1em;
+
 }
 
 ul li {
 list-style: circle;
 list-style-type: circle;
+
 }
 
 ul li a {
@@ -284,12 +293,14 @@ ul li a {
   text-transform: lowercase;
   font-weight: 600;
   font-size: 1.5rem;
+
 }
 
 ul li a:hover {
   color: #ff4fbb;
   transition: 0.5s;
   text-decoration: none;
+
 }
 
 
@@ -454,20 +465,6 @@ input [type=text]:focus {
 
 
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
-  background-color: #1c1a1d;
-  border: solid white 0.1px;
-  min-height: 2em;
-  margin-bottom: 1em;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-width: 5em;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 
 
@@ -774,18 +771,20 @@ border-style: solid;
   align-items: flex-start;
   flex-direction:column;
 }
-
+}
 
 
 @media only screen and (max-height: 800px) {
 h1 {
-  
+
   color: hsl(0, 0%, 100%);
   font-weight: bold;
   font-size:7em;
   line-height: 1em;
   margin: 0;
+
 }
+
 
 h2 {
   font-size: 4em;
@@ -814,10 +813,8 @@ ul li a {
   text-transform: uppercase;
   font-weight: 600;
 }
-
-
-
 }
+
 
 .small-image-text-block {
   width: 100%;
@@ -833,11 +830,13 @@ ul li a {
   font-weight: 900;
 }
 
-
+button {
+  margin: 0;
+}
 .accordion {
   display: flex;
   font-family: 'Atkinson Hyperlegible Next';
-  font-size: 1em;
+  font-size: 1.5em;
   background-color: #1c1a1d;
   color: white;
   cursor: pointer;
@@ -847,30 +846,22 @@ ul li a {
   outline: none;
   transition: 1s;
   align-items: center;
-  margin-left:0;
+  margin-left: 0;
+  margin-top: 1.5em;
+  border-bottom: solid #1c1a1d;
+  border-radius: 0px;
+  transition: 0.4s;
 }
 
-.accordion-small {
-    display: flex;
-  font-family: 'Atkinson Hyperlegible Next';
-  font-size: 1em;
-  background-color: #1c1a1d;
-  color: white;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 1s;
-  align-items: center;
-  margin-left:0;
-}
+
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #1c1a1d;
+  color: white;
   border-bottom: solid white;
   border-radius: 0px;
+  transition: 0.4s;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -885,7 +876,7 @@ ul li a {
 
 .accordion:after {
   content: '\f078'; /* Unicode character for "plus" sign (+) */
-  font-size: 1.5em;
+  font-size: 1em;
   color: white;
   float: right;
    font-family: 'Font Awesome 5 Free';
@@ -895,7 +886,7 @@ ul li a {
 
 .active:after {
  content: '\f077'; /* Unicode character for "plus" sign (+) */
-  font-size: 1.5em;
+  font-size: 1em;
   color: white;
   float: right;
    font-family: 'Font Awesome 5 Free';
@@ -1003,93 +994,6 @@ img.large-image {
 
 
 
-.carousel__content--wrapper {
-  display: none;
-  
-}
-.carousel:has(input#radio0:checked) .carousel__content--wrapper:nth-child(1) {
-  display: contents;
-}
-.carousel:has(input#radio1:checked) .carousel__content--wrapper:nth-child(2) {
-  display: contents;
-}
-.carousel:has(input#radio2:checked) .carousel__content--wrapper:nth-child(3) {
-  display: contents;
-}
-.carousel:has(input#radio3:checked) .carousel__content--wrapper:nth-child(4) {
-  display: contents;
-}
-.carousel:has(input#radio4:checked) .carousel__content--wrapper:nth-child(5) {
-  display: contents;
-}
-.carousel:has(input#radio5:checked) .carousel__content--wrapper:nth-child(6) {
-  display: contents;
-}
-.carousel:has(input#radio6:checked) .carousel__content--wrapper:nth-child(7) {
-  display: contents;
-}
-.carousel__content {
-  display: grid;
-  grid-template-areas: 'p img n';
-  grid-template-columns: auto  auto;
-  place-items: center;
-  
-}
-.carousel__nav {
-  font-family: 'Atkinson Hyperlegible Next';
-  font-weight: bold;
-  padding: 15px;
-  line-height: 1;
-  background: #1c1a1d;
-  color: white;
-  border-radius: 0.2rem;
-  border: 1.5px solid;
-  user-select: none;
-  transition: all 40ms;
-}
-.carousel__nav:active {
-  background: white;
-   color: #1c1a1d;
-  transform: translate(0.2rem, 0.2rem);
-  transition: all 0.2s;
-}
-.carousel__nav--prev {
-  grid-area: p;
-}
-.carousel__nav--next {
-  grid-area: n;
-}
-.carousel--img {
-  grid-area: img;
-  aspect-ratio: 0.7;
-  overflow: hidden;
-  margin: 5px;
-}
-.carousel--img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-.carousel__pagination {
-  display: flex;
-  gap: 0.4rem;
-  justify-content: center;
-}
-.carousel__pagination input {
-  appearance: none;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  background: #1c1a1d;
-  border: 2px solid white;
-  border-radius: 100%;
-  box-shadow: 0.1rem 0.1rem 0;
-}
-.carousel__pagination input:checked {
-  background: white;
-  border-color: white;
 
-}
+
 
