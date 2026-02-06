@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Em Quadros 2025 Portfolio</title>
-  <link href="pink-style.css" rel="stylesheet" />
+  <link id="theme" rel="stylesheet" type="text/css" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,6 +16,20 @@
 
 <body>
 
+    <script>
+        function toggleTheme() {
+            // Select the <link> element
+            let theme = document.getElementById('theme');
+
+            // Toggle between light.css and dark.css
+            if (theme.getAttribute('href') == 'styles.css') {
+                theme.setAttribute('href', 'pink-style.css');
+            } else {
+                theme.setAttribute('href', 'styles.css');
+            }
+        }
+    </script>
+
   <nav>
     <ul class="navbar">
       <li><a href="index.html">Home</a></li>
@@ -23,13 +37,32 @@
       <li><a href="Work.html">Work</a></li>
       <li><a href="Contact.html">Contact</a></li>
 
-      <li><button class="pink-mode">Pink Mode</button></li>
-  </nav>
+      <li><button value="Open Curtain" onclick="toggleTheme() ; myFunction()" class="pink-mode" id="pink-mode-button">Pink Mode</button></li>
+      
+ 
+    </nav>
 
 <button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top">
         <div>^</div>
     </button>
 
+
+<script type="text/javascript">
+function myFunction() {
+
+                var btn = document.getElementById("pink-mode-button");
+
+                if (btn.value == "Dark Mode") {
+                    btn.value = "Pink Mode";
+                    btn.innerHTML = "Pink Mode";
+                }
+                else {
+                    btn.value = "Dark Mode";
+                    btn.innerHTML = "Dark Mode";
+                }
+
+            }
+</script>
 
 
     <script>

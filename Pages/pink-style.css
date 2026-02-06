@@ -284,8 +284,8 @@ color: white;
 }
 
 ul li {
-list-style: circle;
-list-style-type: circle;
+list-style: none;
+list-style-type: none;
 
 }
 
@@ -298,12 +298,11 @@ ul li a {
   text-transform: lowercase;
   font-weight: 600;
   font-size: 1.5rem;
-list-style: none;
-list-style-type: none;
+
 }
 
 ul li a:hover {
-  color: #ff4fbb;
+  transform: scale(150%);
   transition: 0.5s;
   text-decoration: none;
 
@@ -312,9 +311,9 @@ ul li a:hover {
 
 
 
-.pink-mode {
+button.pink-mode {
 color: white;
-  background-color: #ff4fbb;
+  background-color: transparent;
   border-style: none;
   text-decoration: none;
   padding-top: 15px;
@@ -325,7 +324,9 @@ color: white;
   text-transform: lowercase;
   font-weight: 600;
   font-size: 1.5rem;
-  
+  padding-left:0;
+  padding-right:0;
+  transition: 1s;
 }
 
 .primary-button {
@@ -421,17 +422,19 @@ color: white;
 
 button:hover {
   color: black;
-  background-color: white;
+  background-color: transparent;
   transition: 1s;
   border-radius: 5px;
-  
+  transform: scale(110%);
+  transition: 0.5s;
 }
 
 button.pink-mode:hover {
-  color: white;
-  background-color: #1c1a1d;
+  color: black;
+  background-color:transparent;
   transition: 1s;
   border-radius: 5px;
+  transform: scale(110%);
   
 }
 
@@ -997,3 +1000,4 @@ img.large-image {
   width: 100%;
   justify-content: center;
 }
+
