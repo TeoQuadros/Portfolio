@@ -316,9 +316,7 @@ color: white;
   background-color: transparent;
   border-style: none;
   text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  min-width: 7em;
+  padding: 14px 14px;
   border-radius: 5px;
   font-family: 'Atkinson Hyperlegible Next';
   text-transform: lowercase;
@@ -430,6 +428,7 @@ button:hover {
 }
 
 button.pink-mode:hover {
+  padding: 14px 14px;
   color: black;
   background-color: transparent;
   transition: 1s;

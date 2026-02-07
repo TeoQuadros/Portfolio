@@ -279,8 +279,8 @@ color: white;
 }
 
 ul li {
-list-style: circle;
-list-style-type: circle;
+list-style: none;
+list-style-type: none;
 
 }
 
@@ -306,14 +306,12 @@ ul li a:hover {
 
 
 
-.pink-mode {
+button.pink-mode {
 color: #ff4fbb;
   background-color: transparent;
   border-style: none;
   text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  min-width: 7em;
+ padding: 14px 14px;
   border-radius: 5px;
   font-family: 'Atkinson Hyperlegible Next';
   text-transform: lowercase;
@@ -832,6 +830,7 @@ ul li a {
 
 button {
   margin: 0;
+  padding: 0;
 }
 .accordion {
   display: flex;
