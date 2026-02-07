@@ -332,7 +332,7 @@ color: white;
 .primary-button {
 
   color: white;
-  background-color: #1c1a1d;
+  background-color: transparent;
   border-color: white;
   border-style: solid;
   text-decoration: none;
@@ -350,7 +350,7 @@ color: white;
 
 .secondary-button {
   color: white;
-  background-color: black;
+  background-color: transparent;
   border-style: solid;
   text-decoration: none;
   padding: 10px;
@@ -431,7 +431,7 @@ button:hover {
 
 button.pink-mode:hover {
   color: black;
-  background-color:transparent;
+  background-color: transparent;
   transition: 1s;
   border-radius: 5px;
   transform: scale(110%);
@@ -866,7 +866,7 @@ button {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #1c1a1d;
+  background-color: transparent;
   color: white;
   border-bottom: solid white;
   border-radius: 0px;

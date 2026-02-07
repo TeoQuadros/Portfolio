@@ -308,7 +308,7 @@ ul li a:hover {
 
 .pink-mode {
 color: #ff4fbb;
-  background-color: #1c1a1d;
+  background-color: transparent;
   border-style: none;
   text-decoration: none;
   padding-top: 15px;
@@ -415,7 +415,7 @@ color: #ff4fbb;
 
 button:hover {
   color: black;
-  background-color: white;
+  background-color: transparent;
   transition: 1s;
   border-radius: 5px;
   
@@ -423,7 +423,7 @@ button:hover {
 
 button.pink-mode:hover {
   color: white;
-  background-color: #1c1a1d;
+  background-color: transparent;
   transition: 1s;
   border-radius: 5px;
   
