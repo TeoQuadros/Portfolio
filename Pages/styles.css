@@ -8,6 +8,7 @@ html, body, section {
 
 html {
   scroll-snap-type: y mandatory;
+  
 }
 
 body {
@@ -15,8 +16,8 @@ body {
   background-color: #1c1a1d;
   color: hsl(0, 0%, 10%);
   font-family: 'Atkinson Hyperlegible Next';
-  width: 100%
-
+  width: 100%;
+  transition: all 0.5s ease-out;
 }
 
 section {
@@ -179,6 +180,7 @@ nav {
   background-color: #1c1a1d;
   text-align: center;
   width:100%;
+  transition: all 0.5s ease-out;
 }
 
 .navbar {

@@ -9,6 +9,7 @@ html, body, section {
 html {
   scroll-snap-type: y mandatory;
   cursor: url(/Assets/Pinkmode/kitten-paw-normal-select.cur), auto;
+  
 }
 
 
@@ -21,7 +22,7 @@ body {
   color: hsl(0, 0%, 10%);
   font-family: 'Atkinson Hyperlegible Next';
   width: 100%;
-  
+  transition: all 0.5s ease-out;
 }
 
 section {
@@ -184,6 +185,7 @@ nav {
   background-color: #ff4fbb;
   text-align: center;
   width:100%;
+  transition: all 0.5s ease-out;
 }
 
 .navbar {
