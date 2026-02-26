@@ -213,7 +213,7 @@ footer {
   text-align: center;
   width:90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-self: center;
   border-color: white;
   border-top: solid white 0.2px;
@@ -229,7 +229,7 @@ footer {
   text-align: center;
   width:90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-betwe;
   align-self: center;
   border-color: white;
   border-top: solid white 0.2px;
@@ -770,18 +770,43 @@ border-style: solid;
 
 }
 
-@media only screen and (max-width: 500px) {
-.row {
-  display: flex;
-  align-items: flex-start;
+/* ------------------- Mobile Responsivity ------------------- */
+
+@media only screen and (max-width: 480px) {
+
+
+section {
+position: relative;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   flex-direction:column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height:100vh; 
+  font-size: 16px;
+  padding-left:5%;
+  padding-right:5%;
 }
 
+.copy-link::before {
+  content:'\f0c5';  
+  font-family: 'Font Awesome 5 Free';
+  font-size: 0.9em;
+  font-weight: 900;
+  padding-right: 10px
+}
+
+.copy-link {
+  font-size: 0.7em;
+}
+  
 h1 {
 
   color: hsl(0, 0%, 100%);
   font-weight: bold;
-  font-size:7em;
+  font-size:3.6em;
   line-height: 1em;
   margin: 0;
 
@@ -789,13 +814,31 @@ h1 {
 
 
 h2 {
-  font-size: 4em;
+  font-size: 2em;
+}
+
+
+h3 {
+  color: white;
+  accent-color: white;
+  font-weight: 200;
+  font-size: 2em;
+  margin-bottom: 0em;
+  margin-top: 0;
+  
+}
+
+h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+  margin-top: 20px;
 }
 
 p.large-text {
   color: white;
   font-weight: 300;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 nav {
@@ -830,51 +873,76 @@ color: #ff4fbb;
   font-size: 15px;
   
 }
-}
 
-
-
-
-@media only screen and (max-height: 800px) {
-h1 {
-
-  color: hsl(0, 0%, 100%);
-  font-weight: bold;
-  font-size:7em;
-  line-height: 1em;
-  margin: 0;
-
-}
-
-
-h2 {
-  font-size: 4em;
-}
-
-p.large-text {
-  color: white;
-  font-weight: 300;
-  font-size: 1.25em;
-}
-
-nav {
-
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-}
-
-ul li a {
-  font-size: 1em;
-  display: block;
-  color: white;
+footer {
+ position: absolute;
+  bottom: 0px;
+  padding: 0%;
+  gap: 0px;
+  background-color: #1c1a1d;
   text-align: center;
-  padding: 15px 15px;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-weight: 600;
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  border-color: white;
+  border-top: solid white 0.2px;
+  
+
+}
+
+.gallery-footer {
+ position: relative;
+  bottom: 0px;
+  padding: 0%;
+  gap: 0px;
+  background-color: #1c1a1d;
+  text-align: center;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-color: white;
+  border-top: solid white 0.2px;
+
+}
+
+.extra-small {
+font-size: 10px;
+
+}
+
+.footer-item {
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+#ScrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 99;
+  font-size: 25px;
+  font-family: 'Atkinson Hyperlegible Next';
+  border: none;
+  outline: solid;
+  outline-width: 2px;
+  background-color: #1c1a1d;
+  color: white;
+  cursor: pointer;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 8px;
+  
+
 }
 }
+
+/* ------------------- Mobile Responsivity ------------------- */
+
+
 
 .pink-mode {
 color: #ff4fbb;
