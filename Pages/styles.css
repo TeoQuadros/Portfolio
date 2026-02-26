@@ -213,7 +213,7 @@ footer {
   text-align: center;
   width:90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-self: center;
   border-color: white;
   border-top: solid white 0.2px;
@@ -229,7 +229,7 @@ footer {
   text-align: center;
   width:90%;
   display: flex;
-  justify-content: space-betwe;
+  justify-content: center;
   align-self: center;
   border-color: white;
   border-top: solid white 0.2px;
@@ -238,13 +238,13 @@ footer {
 
 
 .extra-small {
-font-size: small;
+font-size: 15px;
 
 }
 
 .footer-item {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
 
 }
 
