@@ -29,7 +29,7 @@ position: relative;
   align-items: flex-start;
   width: 100%;
   height:100%; 
-  font-size: 16px;
+  font-size: 20px;
   padding-left:10%;
   padding-right:10%;
 }
@@ -150,6 +150,18 @@ b {
 
 a {
   color: white;
+  text-decoration: underline solid transparent;
+  text-decoration-thickness: 0.1em;
+  transition:  1s ease;
+}
+
+
+a:hover {
+  text-decoration: underline ;
+  text-decoration-thickness: 0.1em;
+  text-decoration-color: #ff4fbb;
+  transition: 1s;
+
 }
 
 
@@ -160,7 +172,12 @@ blockquote {
 }
 
 .hero-text {
+  
   margin-bottom: 2em
+}
+
+.header-section {
+  padding-top:5em
 }
 
 sup {
@@ -248,20 +265,9 @@ font-size: small;
 
 }
 
-a {
-  text-decoration: underline solid transparent;
-  text-decoration-thickness: 0.1em;
-  transition:  1s ease;
-  
-}
 
-a:hover {
-  text-decoration: underline ;
-  text-decoration-thickness: 0.1em;
-  text-decoration-color: #ff4fbb;
-  transition: 1s;
 
-}
+
 
 #bullet-list {
 list-style: circle;
@@ -297,7 +303,7 @@ ul li a {
   text-decoration: none;
   text-transform: lowercase;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2em;
 
 }
 
@@ -563,6 +569,7 @@ grid-column: 1 / span 5;
 grid-column: span 5;
 border-style: solid;
  border-color: white;
+ padding-left:1%;
 }
 
 .oneby1 {
@@ -586,6 +593,7 @@ grid-column: span 2;
 grid-column: span 2;
 border-style: solid;
  border-color: white;
+ padding:5%;
 }
 
 .threeby2-outline {
@@ -699,6 +707,7 @@ grid-column: span 3;
 grid-row: span 2;
 border-style: solid;
  border-color: white;
+ padding:5%;
 }
 
 .threebythree {
@@ -724,6 +733,7 @@ grid-column:  span 4;
 grid-column:  span 4;
 border-style: solid;
  border-color: white;
+ padding:5%;
 }
 
 .fourbytwo {
@@ -736,6 +746,7 @@ border-style: solid;
   grid-row: span 2;
   border-style: solid;
  border-color: white;
+ padding:5%;
 }
 
 .fivebyone {
@@ -746,6 +757,7 @@ border-style: solid;
 grid-column: span 5;
 border-style: solid;
  border-color: white;
+ padding:5%;
 }
 
 .eightbyone {
@@ -756,6 +768,7 @@ grid-column: 1 / span 8;
 grid-column: 1 / span 8;
 border-style: solid;
  border-color: white;
+ padding:5%;
 }
 
 
