@@ -73,6 +73,14 @@ color: #ff4fbb;
   
 }
 
+button.pink-mode:hover {
+  color: white;
+  background-color: transparent;
+  transition: 1s;
+  border-radius: 5px;
+  
+}
+
 /* -------------- PinkMode -------------- */
 
 
@@ -310,7 +318,7 @@ footer {
   text-align: center;
   width:90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-self: center;
   border-color: white;
   border-top: solid white 0.2px;
@@ -335,7 +343,7 @@ footer {
 
 
 .extra-small {
-font-size: small;
+font-size: 14px;
 
 }
 
@@ -369,49 +377,7 @@ ul {
 padding-left: 0%;
 }
 
-ul li {
-list-style: none;
-list-style-type: none;
 
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 14px;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-weight: 600;
-  font-size: 2em;
-
-}
-
-ul li a:hover {
-  color: #ff4fbb;
-  transition: 0.5s;
-  text-decoration: none;
-
-}
-
-
-
-
-.pink-mode {
-color: #ff4fbb;
-  background-color: #1c1a1d;
-  border-style: none;
-  text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  min-width: 7em;
-  border-radius: 5px;
-  font-family: 'Atkinson Hyperlegible Next';
-  text-transform: lowercase;
-  font-weight: 600;
-  font-size: 1.5rem;
-  
-}
 
 .primary-button {
 
@@ -953,18 +919,33 @@ ul li a {
 }
 
 
-.pink-mode {
+
+button.pink-mode {
 color: #ff4fbb;
-  background-color: #1c1a1d;
+  background-color: transparent;
   border-style: none;
   text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
+ padding: 10px 10px;
+  border-radius: 5px;
   font-family: 'Atkinson Hyperlegible Next';
   text-transform: lowercase;
   font-weight: 600;
   font-size: 15px;
   
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 0px;
+  background-color: #1c1a1d;
+  text-align: center;
+  width:100%;
 }
 
 footer {
@@ -1044,7 +1025,6 @@ color: #ff4fbb;
   text-decoration: none;
   padding-top: 15px;
   padding-bottom: 15px;
-  min-width: 7em;
   border-radius: 5px;
   font-family: 'Atkinson Hyperlegible Next';
   text-transform: lowercase;
