@@ -1,3 +1,68 @@
+/* -------------- PinkMode -------------- */
+
+a {
+  
+  transition:  1s ease;
+  color: white;
+}
+
+a:hover {
+ text-decoration: underline;
+  text-decoration-color: rgb(255, 114, 220);
+  transition: 1s;
+
+}
+
+
+a:focus {
+  color: rgb(255, 114, 220);
+}
+
+ul li {
+list-style: none;
+list-style-type: none;
+
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+}
+
+
+ul li a:hover {
+  transform: scale(130%);
+  transition: 0.5s;
+  text-decoration: none;
+
+}
+
+
+button.pink-mode {
+  color: white;
+  background-color: transparent;
+  border-style: none;
+  text-decoration: none;
+  padding: 14px;
+  font-family: 'Atkinson Hyperlegible Next';
+  text-transform: lowercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: 1s;
+}
+
+/* -------------- PinkMode -------------- */
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -29,7 +94,7 @@ position: relative;
   align-items: flex-start;
   width: 100%;
   height:100%; 
-  font-size: 20px;
+  font-size: 16px;
   padding-left:10%;
   padding-right:10%;
 }
