@@ -11,9 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
+    
   <nav>
     <ul class="navbar">
       <li><a href="index.html">Home</a></li>
@@ -23,45 +25,19 @@
       <li><button class="pink-mode">Pink Mode</button></li>
   </nav>
 
-    <button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top">
+    
+<button onclick="topFunction()" id="ScrollBtn" title="Go to top" aria-label="Scroll to top">
         <div>^</div>
     </button>
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const scrollToTopBtn = document.getElementById('ScrollBtn');
-            const scrollThreshold = 200; // Show button after scrolling 200px
-
-            window.onscroll = function () { scrollFunction() };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-                    scrollToTopBtn.style.display = "block";
-                    scrollToTopBtn.style.opacity = "1"; // Make it appear
-                } else {
-                    scrollToTopBtn.style.display = "none"; // Hide it completely
-                    scrollToTopBtn.style.opacity = "0"; // Make it disappear
-                }
-            }
-
-            scrollToTopBtn.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth' // This creates the visual, smooth scroll
-                });
-            });
-        });
-
-
-    </script>
-
-
     <div class="screen-100">
+        
         <div class="spacer">
             <h1>
-                CommunityCred
+                Community
+                <br>Cred<br>
             </h1>
             <div class="vertical-spacer">
                 <h3><a href="#story">the story</a></h3>
@@ -253,7 +229,7 @@
         </div>
 
         <div class="fullwidth-outline">
-            <h2 class="grid-linkr">take a look at
+            <h2 class="grid-link">take a look at
                 <a href="https://communitycred.scot/">CommunityCred.scot</a>
             </h2>
         </div>

@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -29,33 +30,7 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const scrollToTopBtn = document.getElementById('ScrollBtn');
-            const scrollThreshold = 200; // Show button after scrolling 200px
-
-            window.onscroll = function () { scrollFunction() };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-                    scrollToTopBtn.style.display = "block";
-                    scrollToTopBtn.style.opacity = "1"; // Make it appear
-                } else {
-                    scrollToTopBtn.style.display = "none"; // Hide it completely
-                    scrollToTopBtn.style.opacity = "0"; // Make it disappear
-                }
-            }
-
-            scrollToTopBtn.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth' // This creates the visual, smooth scroll
-                });
-            });
-        });
-
-
-    </script>
+    
 
 
     <div class="screen-100">
